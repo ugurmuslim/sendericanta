@@ -76,6 +76,7 @@
 		</div>
 
 		<div class="row isotope-grid">
+			@if($popular_products)
 			@foreach($popular_products as $product)
 				@if($product->images()->mainImage()->first())
 
@@ -104,6 +105,7 @@
 					</div>
 				@endif
 			@endforeach
+		@endif
 		</div>
 
 		<div class="mt-5">
