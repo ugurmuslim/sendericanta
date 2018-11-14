@@ -75,7 +75,7 @@
 			</h3>
 		</div>
 
-		<div class="row isotope-grid">
+{{--		<div class="row isotope-grid">
 			@if($popular_products)
 			@foreach($popular_products as $product)
 				@if($product->images()->mainImage()->first())
@@ -107,7 +107,7 @@
 			@endforeach
 		@endif
 		</div>
-
+--}}
 		<div class="mt-5">
 
 		@include('shop::partials._products_filter')
