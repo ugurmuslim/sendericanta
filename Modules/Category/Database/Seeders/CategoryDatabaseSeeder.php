@@ -56,7 +56,6 @@ class CategoryDatabaseSeeder extends Seeder
       ]);
 
       Category::create([
-      'id' => '6',
       'name' => 'Sırt Çantası',
       'slug' => 'erkek-sırt-cantasi',
       'head_category_id' => '1',
@@ -66,7 +65,6 @@ class CategoryDatabaseSeeder extends Seeder
 
 
       Category::create([
-      'id' => '7',
       'name' => 'Yandan Asmalı Çanta ',
       'slug' => 'erkek-yandan-asmali-canta',
       'head_category_id' => '1',
@@ -75,7 +73,6 @@ class CategoryDatabaseSeeder extends Seeder
       ]);
 
       Category::create([
-      'id' => '8',
       'name' => 'Cüzdan',
       'slug' => 'erkek-cuzdan',
       'head_category_id' => '1',
@@ -85,7 +82,6 @@ class CategoryDatabaseSeeder extends Seeder
 
 
       Category::create([
-      'id' => '8',
       'name' => 'Sırt Çantası',
       'slug' => 'kadin-sirt-cantasi',
       'head_category_id' => '2',
@@ -95,7 +91,6 @@ class CategoryDatabaseSeeder extends Seeder
 
 
       Category::create([
-      'id' => '9',
       'name' => 'Yandan Asmalı Çanta',
       'slug' => 'kadin-yandan-asmali-canta',
       'head_category_id' => '2',
@@ -104,7 +99,6 @@ class CategoryDatabaseSeeder extends Seeder
       ]);
 
       Category::create([
-      'id' => '10',
       'name' => 'Cüzdan',
       'slug' => 'kadin-cüzdan',
       'head_category_id' => '2',
@@ -114,7 +108,6 @@ class CategoryDatabaseSeeder extends Seeder
 
       //
       Category::create([
-      'id' => '11',
       'name' => 'Sırt Çantası',
       'slug' => 'unisex-sirt-cantasi',
       'head_category_id' => '3',
@@ -123,7 +116,6 @@ class CategoryDatabaseSeeder extends Seeder
       ]);
 
       Category::create([
-      'id' => '12',
       'name' => 'Yandan Asmalı Çanta',
       'slug' => 'unisex-yandan-asmali-canta',
       'head_category_id' => '3',
@@ -132,15 +124,14 @@ class CategoryDatabaseSeeder extends Seeder
       ]);
 
       Category::create([
-      'id' => '13',
       'name' => 'Çanta Tamir',
       'slug' => 'canta-tamir',
       'head_category_id' => '4',
       'number_low' => "180000",
       'number_high' => "189999",
       ]);
+
       Category::create([
-      'id' => '14',
       'name' => 'Kemer Tamir',
       'slug' => 'kemer-tamir',
       'head_category_id' => '4',
@@ -148,7 +139,6 @@ class CategoryDatabaseSeeder extends Seeder
       'number_high' => "199999",
       ]);
       Category::create([
-      'id' => '15',
       'name' => 'Çanta Tasarımları',
       'slug' => 'canta-tasarımlari',
       'head_category_id' => '5',
@@ -157,7 +147,6 @@ class CategoryDatabaseSeeder extends Seeder
       ]);
 
       Category::create([
-      'id' => '16',
       'name' => 'Kemer Tasarımları',
       'slug' => 'kemer-tasarimlari',
       'head_category_id' => '5',
@@ -166,7 +155,6 @@ class CategoryDatabaseSeeder extends Seeder
       ]);
 
       Category::create([
-      'id' => '17',
       'name' => 'Valiz',
       'slug' => 'valiz',
       'number_low' => "220000",
