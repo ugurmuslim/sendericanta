@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Modules\Category\Entities\Category;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
+use Session;
 use Cache;
 class CategoryController extends Controller
 {
@@ -43,7 +44,7 @@ class CategoryController extends Controller
       'number_high' => 'required|integer',
     ));
     $categories = Category::all();
-    $slug = str_slug($request->name, "-");
+    $slug = str_slug($request->slug, "-");
 
     foreach($categories as $category) {
       if((request('number_low') >= $category->number_low && request('number_low') <= $category->number_high) ||
@@ -120,7 +121,7 @@ public function update(Request $request,$id)
   'number_high' => 'required|integer',
   ));
   $category_ins = Category::find($id);
-  $slug = str_slug($request->name, "-");
+  $slug = str_slug($request->slug, "-");
   $categories = Category::all();
   foreach($categories as $category) {
     if($category->id !== $category_ins->id) {
@@ -147,9 +148,8 @@ public function destroy($slug)
 {
   $category = Category::where('slug',$slug)->first();
   $category->delete();
-  $request->session()
-  ->flash('success',"Kategori $category->name Başarı ile Silindi");
-  return redirect()->back();
+  Session::flash('success',"Kategori  Başarı ile Silindi");
+  return redirect()->route('categories.index');
 
 }
 }

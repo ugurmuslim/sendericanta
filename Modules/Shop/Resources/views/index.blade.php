@@ -1,5 +1,5 @@
 @extends('shop::layouts.master')
-@section('title','PETIT MAĞAZA |')
+@section('title','ŞEN DERİ MAĞAZA |')
 @section('content')
 	<style media="screen">
 	.product_block2
@@ -69,13 +69,13 @@
 --}}
 		<!-- Filter -->
 
-		<div class="p-b-45">
+{{--			<div class="p-b-45">
 			<h3 class="ltext-106 cl5 txt-center">
 				{{__('views.shop.shop_popular_products')}}
 			</h3>
 		</div>
 
-{{--		<div class="row isotope-grid">
+	<div class="row isotope-grid">
 			@if($popular_products)
 			@foreach($popular_products as $product)
 				@if($product->images()->mainImage()->first())
@@ -115,7 +115,7 @@
 
 	<div class="p-b-45">
 		<h3 class="ltext-106 cl5 txt-center">
-			{{__('views.shop.shop_butix_products')}}
+			{{__('views.shop.shop_senderi_bags')}}
 		</h3>
 	</div>
 		<div class="row isotope-grid" id="butix_products">
@@ -157,7 +157,7 @@
 		--}}
 		<div class="p-b-45 mt-5">
 			<h3 class="ltext-106 cl5 txt-center">
-				{{__('views.shop.shop_accesuar_products')}}
+				{{__('views.shop.shop_senderi_luggages')}}
 			</h3>
 		</div>
 
@@ -192,7 +192,7 @@
 
 		<div class="p-b-45 mt-5">
 			<h3 class="ltext-106 cl5 txt-center">
-				{{__('views.shop.shop_bags_products')}}
+				{{__('views.shop.shop_senderi_purses	')}}
 			</h3>
 		</div>
 

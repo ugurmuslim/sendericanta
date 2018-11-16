@@ -20,6 +20,7 @@ class CreateProductTable extends Migration
             $table->string('slug')->unique();
             $table->string('details')->nullable();
             $table->integer('category_id');
+            $table->integer('brand_id')->nullable();
             $table->decimal('price',8,2);
             $table->integer('unit_id');
             $table->boolean('size_track')->nullable();

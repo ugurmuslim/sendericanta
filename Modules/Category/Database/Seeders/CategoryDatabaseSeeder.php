@@ -28,8 +28,8 @@ class CategoryDatabaseSeeder extends Seeder
       'name' => 'Erkek Giyim',
       'slug' => 'erkek-giyim',
       'head_category_id' => '1',
-      'number_low' => "11",
-      'number_high' => "12",
+      'number_low' => "12",
+      'number_high' => "13",
     ]);
 
     Category::create([
@@ -37,8 +37,8 @@ class CategoryDatabaseSeeder extends Seeder
       'name' => 'Kadın Giyim',
       'slug' => 'kadın-giyim',
       'head_category_id' => '1',
-      'number_low' => "12",
-      'number_high' => "13",
+      'number_low' => "14",
+      'number_high' => "15",
     ]);
 
     Category::create([
@@ -46,24 +46,24 @@ class CategoryDatabaseSeeder extends Seeder
       'name' => 'Unisex Giyim',
       'slug' => 'unisex-giyim',
       'head_category_id' => '1',
-      'number_low' => "13",
-      'number_high' => "14",
+      'number_low' => "16",
+      'number_high' => "17",
       ]);
 
       Category::create([
       'id' => '5',
       'name' => 'Çanta',
       'slug' => 'canta',
-      'number_low' => "14",
-      'number_high' => "15",
+      'number_low' => "18",
+      'number_high' => "19",
       ]);
 
       Category::create([
       'id' => '6',
       'name' => 'Aksesuar',
       'slug' => 'aksesuar',
-      'number_low' => "15",
-      'number_high' => "16",
+      'number_low' => "20",
+      'number_high' => "21",
       ]);
 
 
@@ -72,8 +72,8 @@ class CategoryDatabaseSeeder extends Seeder
       'name' => 'Kolye',
       'slug' => 'kolye',
       'head_category_id' => '6',
-      'number_low' => "16",
-      'number_high' => "17",
+      'number_low' => "22",
+      'number_high' => "23",
       ]);
 
       Category::create([
@@ -81,8 +81,8 @@ class CategoryDatabaseSeeder extends Seeder
       'name' => 'Yüzük',
       'slug' => 'yuzuk',
       'head_category_id' => '6',
-      'number_low' => "20",
-      'number_high' => "21",
+      'number_low' => "24",
+      'number_high' => "25",
       ]);
 
 

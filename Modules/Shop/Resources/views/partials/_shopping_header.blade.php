@@ -5,7 +5,7 @@
     <div class="top-bar">
       <div class="content-topbar flex-sb-m h-full container">
         <div class="left-top-bar">
-          {{__('views.shop.free_shipping')}}
+          {{__('views.shop.bag_repair')}}
         </div>
 
         <div class="right-top-bar flex-w h-full">
@@ -34,7 +34,8 @@
 
         <!-- Logo desktop -->
         <a href="{{route('shop.index')}}" class="logo">
-          <img src="{{asset('modules/shop/images/logos/petit-butix.jpg')}}" class="rounded-circle" alt="petit-logo">
+          ŞEN LOGO
+        {{--  <img src="{{asset('modules/shop/images/logos/petit-butix.jpg')}}" class="rounded-circle" alt="petit-logo">--}}
         </a>
 
         <!-- Menu desktop -->
@@ -43,10 +44,20 @@
             <li>
               <a href="{{route('shop.index')}}">{{__('views.shop.menu_home')}}</a>
             </li>
+
+            <li class="">
+              <a href="#">Markalar</a>
+              <ul class="sub-menu">
+                @foreach(Modules\Category\Entities\Category::where('head_category_id',1)->get() as $category )
+                <li><a href="{{route('categories.products',$category->slug)}}">{{$category->name}}</a></li>
+              @endforeach
+              </ul>
+            </li>
+
             <li class="">
               <a href="#">Erkek</a>
               <ul class="sub-menu">
-                @foreach(Modules\Category\Entities\Category::where('head_category_id',2)->get() as $category )
+                @foreach(Modules\Category\Entities\Category::where('head_category_id',1)->get() as $category )
                 <li><a href="{{route('categories.products',$category->slug)}}">{{$category->name}}</a></li>
               @endforeach
               </ul>
@@ -54,7 +65,7 @@
             <li class="">
               <a href="#">Kadın</a>
               <ul class="sub-menu">
-                @foreach(Modules\Category\Entities\Category::where('head_category_id',3)->get() as $category )
+                @foreach(Modules\Category\Entities\Category::where('head_category_id',2)->get() as $category )
                 <li><a href="{{route('categories.products',$category->slug)}}">{{$category->name}}</a></li>
               @endforeach
               </ul>
@@ -62,13 +73,13 @@
             <li class="">
               <a href="#">Unisex</a>
               <ul class="sub-menu">
-                @foreach(Modules\Category\Entities\Category::where('head_category_id',4)->get() as $category )
+                @foreach(Modules\Category\Entities\Category::where('head_category_id',3)->get() as $category )
                 <li><a href="{{route('categories.products',$category->slug)}}">{{$category->name}}</a></li>
               @endforeach
               </ul>
             </li>
             <li class="">
-              <a href="#">Çanta</a>
+              <a href="#">Valiz</a>
               <ul class="sub-menu">
                 @foreach(Modules\Category\Entities\Category::where('head_category_id',5)->get() as $category )
                 <li><a href="{{route('categories.products',$category->slug)}}">{{$category->name}}</a></li>
@@ -76,9 +87,18 @@
               </ul>
             </li>
             <li class="">
-              <a href="#">Aksesuar</a>
+              <a href="#">Tamir</a>
               <ul class="sub-menu">
-                @foreach(Modules\Category\Entities\Category::where('head_category_id',6)->get() as $category )
+                @foreach(Modules\Category\Entities\Category::where('head_category_id',4)->get() as $category )
+                <li><a href="{{route('categories.products',$category->slug)}}">{{$category->name}}</a></li>
+              @endforeach
+              </ul>
+            </li>
+
+            <li class="">
+              <a href="#">Tasarım</a>
+              <ul class="sub-menu">
+                @foreach(Modules\Category\Entities\Category::where('head_category_id',5)->get() as $category )
                 <li><a href="{{route('categories.products',$category->slug)}}">{{$category->name}}</a></li>
               @endforeach
               </ul>

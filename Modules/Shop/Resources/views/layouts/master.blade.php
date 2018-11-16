@@ -18,9 +18,9 @@
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-P47RKGT');</script>
  <!--End Google Tag Manager -->
-<title>@yield('title') PETITSTORE</title>
+<title>@yield('title') ŞEN DERİ ÇANTA</title>
 <meta charset="UTF-8">
-<meta name="description" content="Petit store kaliteli ürünleri ucuza bulabildiğiniz bir platformdur. Giyim , Aksesuar, Çanta kategorilerinde 100'den fazla ürün sizi bekliyor.">
+<meta name="description" content="Şen Deri Çanta kaliteli ürünleri ucuza bulabildiğiniz bir platformdur. Giyim , Aksesuar, Çanta kategorilerinde 100'den fazla ürün sizi bekliyor.">
 <meta name="yandex-verification" content="3ea7ec4066c67a32" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 @include('shop::partials._shopping_head')

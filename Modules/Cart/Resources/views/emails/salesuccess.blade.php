@@ -14,7 +14,7 @@
 
     <div class="container mt-5">
       <p>Siparişiniz Başarı ile Alındı.</p>
-      <p><a href="{{route('shop.index')}}">https://petitstore.web.tr</a> </p>
+      <p><a href="{{route('shop.index')}}">https://sendericanta.com</a> </p>
       <p>Sipariş Numaranız : {{$product_sale[0]->sale_package}}</p>
       <table class="table">
         <thead>

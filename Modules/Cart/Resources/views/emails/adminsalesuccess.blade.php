@@ -14,7 +14,7 @@
 
     <div class="container mt-5">
       <p>Müşteri Sipariş Verdi.</p>
-      <p><a href="{{route('shop.index')}}">https://petitstore.web.tr</a> </p>
+      <p><a href="{{route('shop.index')}}">https://sendericanta.com</a> </p>
       <p>Sipariş Numarası : {{$product_sale[0]->sale_package}}</p>
       <p>Müşteri Adı : {{$adress->first_name . ' ' . $adress->first_name}}</p>
       </div>

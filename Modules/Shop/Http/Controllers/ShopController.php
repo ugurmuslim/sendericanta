@@ -34,10 +34,11 @@ class ShopController extends Controller
       $cache_accesuar = "Accesuar_Cache";
 
       $category = new Category;
-      $butix_products = Product::where('deleted',false)->whereIn('category_id',$category->getCategoryIds('giyim',$cache_butix))->orderBy('id','DESC')->take(8)->get();
-      $accessuar_products = Product::where('deleted',false)->whereIn('category_id',$category->getCategoryIds('aksesuar',$cache_accesuar))->orderBy('id','DESC')->take(8)->get();
-      $bag_products = Product::where('deleted',false)->whereIn('category_id',$category->getCategoryIds('canta',$cache_bags))->orderBy('id','DESC')->take(8)->get();
+      $butix_products = Product::where('deleted',false)->whereIn('category_id',$category->getCategoryIds('erkek',$cache_butix))->orderBy('id','DESC')->take(8)->get();
+      $accessuar_products = Product::where('deleted',false)->whereIn('category_id',$category->getCategoryIds('kadin',$cache_accesuar))->orderBy('id','DESC')->take(8)->get();
+      $bag_products = Product::where('deleted',false)->whereIn('category_id',$category->getCategoryIds('tamir',$cache_bags))->orderBy('id','DESC')->take(8)->get();
       $categories = Category::all();
+
         return view('shop::index')
         ->with('butix_products',$butix_products)
         ->with('accessuar_products',$accessuar_products)

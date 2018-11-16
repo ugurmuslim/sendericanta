@@ -11,6 +11,9 @@
 {{ Form::label('name','İsim:',['class'=>'form-spacing-top']) }}
 {{ Form::text('name',null,['class'=>'form-control','required' => ''])}}
 
+{{ Form::label('slug','Gizli Tanım:',['class'=>'form-spacing-top']) }}
+{{ Form::text('slug',null,['class'=>'form-control','required' => ''])}}
+
 {{ Form::label('number_low','Alt Numara',['class'=>'form-spacing-top']) }}
 {{ Form::number('number_low',null,['class'=>'form-control','required' => '', 'minlength' => '1', 'maxlength' => '40'])}}
 
@@ -27,6 +30,7 @@
   @foreach($categories as $category)
     <option value='{{ $category->id }}'@if(old('head_category_id') == $category->id) selected @endif>{{ $category->name }}</option>
     @endforeach
+    <option value=''>Yok</option>
 
   </select>
 

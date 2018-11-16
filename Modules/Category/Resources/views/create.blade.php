@@ -11,6 +11,9 @@
         {{ Form::label('name','İsim',['class'=>'form-spacing-top']) }}
         {{ Form::text('name',null,['class'=>'form-control','required' => '', 'minlength' => '1', 'maxlength' => '40'])}}
 
+        {{ Form::label('slug','Gizli İsim : ',['class'=>'form-spacing-top']) }}
+        {{ Form::text('slug',null,['class'=>'form-control','required' => '', 'minlength' => '1', 'maxlength' => '40'])}}
+
         {{ Form::label('number_low','Alt Numara',['class'=>'form-spacing-top']) }}
         {{ Form::number('number_low',null,['class'=>'form-control','required' => '', 'minlength' => '1', 'maxlength' => '40'])}}
 

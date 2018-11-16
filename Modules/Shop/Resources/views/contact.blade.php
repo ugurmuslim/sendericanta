@@ -44,7 +44,8 @@
 							</span>
 
 							<p class="stext-115 cl6 size-213 p-t-18">
-								Tomtom Mahallesi İstiklal Caddesi Beyoğlu İş Merkezi No : 187 / 58 BEYOĞLU / İSTANBUL
+								İstiklal Caddesi Asmalı Mescid Mahallesi
+ 							Danışman Han Geçidi No : 116/1-C  BEYOĞLU / İSTANBUL
 							</p>
 						</div>
 					</div>
@@ -60,7 +61,7 @@
 							</span>
 
 							<p class="stext-115 cl1 size-213 p-t-18">
-								+90 532 640 56 18
+
 							</p>
 						</div>
 					</div>
@@ -76,7 +77,7 @@
 							</span>
 
 							<p class="stext-115 cl1 size-213 p-t-18">
-								ugur.muslim@gmail.com
+								iletisim@sendericanta.com
 							</p>
 						</div>
 					</div>
