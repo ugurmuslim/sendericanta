@@ -70,7 +70,7 @@
 
 					<div class="col-md-6 col-lg-5 p-b-30">
 						<div class="p-r-50 p-t-5 p-lr-0-lg">
-							@if(!$product->category)
+							@if(!$product->category->no_price)
 							{!! Form::open(['route'=>['cart.store'],'data-parsley-validate' => '' ]) !!}
 							<h4 class="mtext-105 cl2 js-name-detail p-b-14">
 								{{$product->name}}
@@ -89,7 +89,7 @@
 							</p>
 
 							<!--  -->
-							@if(!$product->category)
+							@if(!$product->category->no_price)
 
 							<div class="p-t-33">
 								<div class="flex-w flex-r-m p-b-10">
