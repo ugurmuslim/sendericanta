@@ -70,6 +70,7 @@
 
 					<div class="col-md-6 col-lg-5 p-b-30">
 						<div class="p-r-50 p-t-5 p-lr-0-lg">
+							@if(!$product->category)
 							{!! Form::open(['route'=>['cart.store'],'data-parsley-validate' => '' ]) !!}
 							<h4 class="mtext-105 cl2 js-name-detail p-b-14">
 								{{$product->name}}
@@ -82,12 +83,14 @@
 								<input type="number" name="product_price" value="{{$product->price}}" hidden>
 
 							</span>
-
+						@endif
 							<p class="stext-102 cl3 p-t-23">
 								{{$product->details}}
 							</p>
 
 							<!--  -->
+							@if(!$product->category)
+
 							<div class="p-t-33">
 								<div class="flex-w flex-r-m p-b-10">
 									<div class="size-203 flex-c-m respon6">
@@ -166,6 +169,7 @@
 								</div>
 							</div>
 						</div>
+					@endif
 						<!--  -->
 						{{--	<div class="flex-w flex-m p-l-100 p-t-40 respon7">
 						<div class="flex-m bor9 p-r-10 m-r-11">

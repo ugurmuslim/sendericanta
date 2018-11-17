@@ -30,20 +30,20 @@ class ShopController extends Controller
       foreach($popular as $value){
         $popular_products[] = Product::where('slug',$value)->first();
       }
-      $cache_butix = "Butix_Cache";
-      $cache_bags = "Bags_Cache";
-      $cache_accesuar = "Accesuar_Cache";
+      $men_bags = "Men_Cache";
+      $woman_bags = "Women_Cache";
+      $unisex_bags = "Unisex_Cache";
 
       $category = new Category;
-      $butix_products = Product::where('deleted',false)->whereIn('category_id',$category->getCategoryIds('erkek',$cache_butix))->orderBy('id','DESC')->take(8)->get();
-      $accessuar_products = Product::where('deleted',false)->whereIn('category_id',$category->getCategoryIds('kadin',$cache_accesuar))->orderBy('id','DESC')->take(8)->get();
-      $bag_products = Product::where('deleted',false)->whereIn('category_id',$category->getCategoryIds('tamir',$cache_bags))->orderBy('id','DESC')->take(8)->get();
+      $men_products = Product::where('deleted',false)->whereIn('category_id',$category->getCategoryIds('erkek',$men_bags))->orderBy('id','DESC')->take(8)->get();
+      $women_products = Product::where('deleted',false)->whereIn('category_id',$category->getCategoryIds('kadin',$woman_bags))->orderBy('id','DESC')->take(8)->get();
+      $unisex_products = Product::where('deleted',false)->whereIn('category_id',$category->getCategoryIds('unisex',$unisex_bags))->orderBy('id','DESC')->take(8)->get();
       $categories = Category::all();
       $brands = Brand::all();
         return view('shop::index')
-        ->with('butix_products',$butix_products)
-        ->with('accessuar_products',$accessuar_products)
-        ->with('bag_products',$bag_products)
+        ->with('men_products',$men_products)
+        ->with('women_products',$women_products)
+        ->with('unisex_products',$unisex_products)
         ->with('popular_products',$popular_products)
         ->withCategories($categories)
         ->withBrands($brands);

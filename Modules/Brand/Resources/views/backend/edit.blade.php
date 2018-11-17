@@ -51,7 +51,6 @@
   @parent
   <script type="text/javascript">
     $('.select2').select2();
-    $('.select2').val(["1","2","3"]).trigger('change');
-
+    $('.select2').select2().val({!! json_encode($brand->categories()->allRelatedIds()) !!}).trigger('change');
   </script>
 @endsection

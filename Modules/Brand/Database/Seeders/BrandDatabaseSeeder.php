@@ -4,6 +4,7 @@ namespace Modules\Brand\Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
+use Modules\Brand\Entities\Brand;
 
 class BrandDatabaseSeeder extends Seeder
 {
@@ -14,8 +15,60 @@ class BrandDatabaseSeeder extends Seeder
      */
     public function run()
     {
-        Model::unguard();
+        Brand::create([
+          'name' => 'North Face',
+          'slug' => 'nort-face',
+        ]);
 
-        // $this->call("OthersTableSeeder");
+        Brand::create([
+          'name' => 'Columbia',
+          'slug' => 'columbia',
+        ]);
+
+        Brand::create([
+          'name' => 'Kipling',
+          'slug' => 'kipling',
+        ]);
+
+
+        Brand::create([
+          'name' => 'National Geographic',
+          'slug' => 'national-geographic',
+        ]);
+
+        Brand::create([
+          'name' => 'Eastpak',
+          'slug' => 'eastpak',
+        ]);
+
+        Brand::create([
+          'name' => 'Delsey',
+          'slug' => 'delsey',
+        ]);
+
+        Brand::create([
+          'name' => 'Fouvor',
+          'slug' => 'fouvor',
+        ]);
+
+        Brand::create([
+          'name' => 'Hummel',
+          'slug' => 'hummel',
+        ]);
+
+        Brand::create([
+          'name' => 'Zenga',
+          'slug' => 'zenga',
+        ]);
+
+        Brand::create([
+          'name' => 'Hayrer',
+          'slug' => 'hayrer',
+        ]);
+
+        Brand::create([
+          'name' => 'Seahawk',
+          'slug' => 'seahawk',
+        ]);
     }
 }

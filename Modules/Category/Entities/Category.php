@@ -21,6 +21,10 @@ class Category extends Model
     return $cats;
   }
 
+  public function brands() {
+    return  $this->belongsToMany('Modules\Brand\Entities\Brand');
+  }
+
 
   public function image() {
     return  $this->hasOne('Modules\Image\Entities\Image','type_id')->where('type',2);

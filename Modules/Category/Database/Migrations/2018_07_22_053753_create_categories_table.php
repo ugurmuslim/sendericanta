@@ -20,6 +20,7 @@ class CreateCategoriesTable extends Migration
       $table->integer('head_category_id')->nullable();
       $table->integer('number_low');
       $table->integer('number_high');
+      $table->boolean('no_price')->nullable();
       $table->timestamps();
     });
     }

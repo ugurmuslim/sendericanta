@@ -49,7 +49,7 @@ class BrandController extends Controller
     $brand->save();
     $brand->categories()->sync($request->category_ids);
     $request->session()
-    ->flash('success',"Ürün $brand->name Yaratıldı");
+    ->flash('success',"Marka $brand->name Yaratıldı");
     return redirect()->route('brands.create');
 
   }
@@ -72,8 +72,9 @@ class BrandController extends Controller
   public function edit($slug)
   {
     $brand = Brand::where('slug',$slug)->first();
+    $categories = Category::all();
     $category2=array();
-    foreach($brand->categories as $category){
+    foreach($categories as $category){
 
       $category2[$category->id]=$category->name;
 
@@ -88,8 +89,22 @@ class BrandController extends Controller
   * @param  Request $request
   * @return Response
   */
-  public function update(Request $request)
+  public function update(Request $request,$id)
   {
+    $request->validate(array(
+      'name' => 'required|max:50',
+      'category_ids' => 'required',
+    ));
+    $brand = Brand::find($id);
+    $brand->name = $request->name;
+    $brand->slug = str_slug($request->slug, "-");
+    $brand->save();
+    $brand->categories()->sync($request->category_ids);
+    $request->session()
+    ->flash('success',"Marka $brand->name Değiştirildi");
+    return redirect()->route('brands.index');
+
+
   }
 
   /**

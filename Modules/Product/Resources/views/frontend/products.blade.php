@@ -27,10 +27,11 @@
 											<a href="{{route('product.shop-detail',$product->slug)}}" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
 												{{$product->name}}
 											</a>
-
+											@if(!$product->category)
 											<span class="stext-105 cl3">
 												<span class="simge-tl">&#8378;</span> {{$product->price}}
 											</span>
+										@endif
 										</div>
 									</div>
 								</div>

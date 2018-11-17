@@ -19,6 +19,28 @@
 				</h3>
 			</div>
 			<div class="container">
+				<div class="row isotope-grid">
+					@foreach($category->brands as $brand)
+						@if($brand->image()->first())
+							<div class="col-sm-6 col-md-2 col-lg-1 p-b-35 isotope-item ">
+								<!-- Block2 -->
+								<div class="block2 product_block2">
+									{{-- Eğer hover yapılınca fotografın yakınlaşmasını istersek hov-img0--}}
+									<div class="block2-pic">
+										<a href="{{route('brands.products',['brand_slug'=>$brand->slug,'category_slug'=>$category->slug])}}">
+											<img src="{{asset('images/brands/200-230/' . $brand->image->name)}}" style="width:70px; height:77px;" alt="{{$brand->slug}}">
+										</a>
+									</div>
+
+
+										</div>
+									</div>
+						@endif
+					@endforeach
+				</div>
+
+
+
 				<div class="row isotope-grid mt-5">
 					@foreach($products as $product)
 						@if($product->images()->mainImage(1)->first())
@@ -36,10 +58,12 @@
 											<a href="{{route('product.shop-detail',$product->slug)}}" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
 												{{$product->name}}
 											</a>
+											@if(!$product->category)
 
 											<span class="stext-105 cl3">
 												<span class="simge-tl">&#8378;</span> {{$product->price}}
 											</span>
+										@endif
 										</div>
 									</div>
 								</div>

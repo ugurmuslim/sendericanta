@@ -23,6 +23,7 @@
 
 			</style>
 			<body class="animsition">
+
 				<!-- Header -->
 				@include('shop::partials._shopping_header')
 				<!-- Cart -->
@@ -135,11 +136,11 @@
 
 	<div class="p-b-45">
 		<h3 class="ltext-106 cl5 txt-center">
-			{{__('views.shop.shop_senderi_bags')}}
+			{{__('views.shop.shop_men_bags')}}
 		</h3>
 	</div>
 		<div class="row isotope-grid" id="butix_products">
-			@foreach($butix_products as $product)
+			@foreach($men_products as $product)
 				@if($product->images()->mainImage()->first())
 
 					<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item {{$product->category->slug}}">
@@ -177,12 +178,12 @@
 		--}}
 		<div class="p-b-45 mt-5">
 			<h3 class="ltext-106 cl5 txt-center">
-				{{__('views.shop.shop_senderi_luggages')}}
+				{{__('views.shop.shop_women_bags')}}
 			</h3>
 		</div>
 
 		<div class="row isotope-grid mt-5">
-			@foreach($accessuar_products as $product)
+			@foreach($women_products as $product)
 				@if($product->images()->mainImage()->first())
 					<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item {{$product->category->slug}}">
 						<!-- Block2 -->
@@ -212,12 +213,12 @@
 
 		<div class="p-b-45 mt-5">
 			<h3 class="ltext-106 cl5 txt-center">
-				{{__('views.shop.shop_senderi_purses	')}}
+				{{__('views.shop.shop_unisex_bags')}}
 			</h3>
 		</div>
 
 		<div class="row isotope-grid mt-5">
-			@foreach($bag_products as $product)
+			@foreach($unisex_products as $product)
 				@if($product->images()->mainImage()->first())
 					<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item {{$product->category->slug}}">
 						<!-- Block2 -->

@@ -56,7 +56,7 @@ class CategoryDatabaseSeeder extends Seeder
       ]);
 
       Category::create([
-      'name' => 'Sırt Çantası',
+      'name' => 'Erkek Sırt Çantası',
       'slug' => 'erkek-sırt-cantasi',
       'head_category_id' => '1',
       'number_low' => "100000",
@@ -65,7 +65,7 @@ class CategoryDatabaseSeeder extends Seeder
 
 
       Category::create([
-      'name' => 'Yandan Asmalı Çanta ',
+      'name' => 'Erkek Yandan Asmalı Çanta ',
       'slug' => 'erkek-yandan-asmali-canta',
       'head_category_id' => '1',
       'number_low' => "110000",
@@ -73,7 +73,7 @@ class CategoryDatabaseSeeder extends Seeder
       ]);
 
       Category::create([
-      'name' => 'Cüzdan',
+      'name' => 'Erkek Cüzdan',
       'slug' => 'erkek-cuzdan',
       'head_category_id' => '1',
       'number_low' => "120000",
@@ -82,7 +82,7 @@ class CategoryDatabaseSeeder extends Seeder
 
 
       Category::create([
-      'name' => 'Sırt Çantası',
+      'name' => 'Kadın Sırt Çantası',
       'slug' => 'kadin-sirt-cantasi',
       'head_category_id' => '2',
       'number_low' => "130000",
@@ -91,7 +91,7 @@ class CategoryDatabaseSeeder extends Seeder
 
 
       Category::create([
-      'name' => 'Yandan Asmalı Çanta',
+      'name' => 'Kadın Yandan Asmalı Çanta',
       'slug' => 'kadin-yandan-asmali-canta',
       'head_category_id' => '2',
       'number_low' => "140000",
@@ -99,7 +99,7 @@ class CategoryDatabaseSeeder extends Seeder
       ]);
 
       Category::create([
-      'name' => 'Cüzdan',
+      'name' => 'Kadın Cüzdan',
       'slug' => 'kadin-cüzdan',
       'head_category_id' => '2',
       'number_low' => "150000",
@@ -108,7 +108,7 @@ class CategoryDatabaseSeeder extends Seeder
 
       //
       Category::create([
-      'name' => 'Sırt Çantası',
+      'name' => 'Unisex Sırt Çantası',
       'slug' => 'unisex-sirt-cantasi',
       'head_category_id' => '3',
       'number_low' => "160000",
@@ -116,7 +116,7 @@ class CategoryDatabaseSeeder extends Seeder
       ]);
 
       Category::create([
-      'name' => 'Yandan Asmalı Çanta',
+      'name' => 'Unisex Yandan Asmalı Çanta',
       'slug' => 'unisex-yandan-asmali-canta',
       'head_category_id' => '3',
       'number_low' => "170000",
@@ -129,6 +129,7 @@ class CategoryDatabaseSeeder extends Seeder
       'head_category_id' => '4',
       'number_low' => "180000",
       'number_high' => "189999",
+      'no_price' => true,
       ]);
 
       Category::create([
@@ -137,6 +138,7 @@ class CategoryDatabaseSeeder extends Seeder
       'head_category_id' => '4',
       'number_low' => "199000",
       'number_high' => "199999",
+      'no_price' => true,
       ]);
       Category::create([
       'name' => 'Çanta Tasarımları',
@@ -144,6 +146,7 @@ class CategoryDatabaseSeeder extends Seeder
       'head_category_id' => '5',
       'number_low' => "200000",
       'number_high' => "209999",
+      'no_price' => true,
       ]);
 
       Category::create([
@@ -152,6 +155,7 @@ class CategoryDatabaseSeeder extends Seeder
       'head_category_id' => '5',
       'number_low' => "210000",
       'number_high' => "219999",
+      'no_price' => true,
       ]);
 
       Category::create([
