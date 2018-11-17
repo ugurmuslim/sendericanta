@@ -10,3 +10,8 @@ Route::group(['middleware' => ['web','admin'], 'prefix' => 'brands', 'namespace'
   Route::post('/', 'BrandController@store')->name('brands.store');
   Route::delete('/{id}', 'BrandController@destroy')->name('brands.destroy');
 });
+
+Route::group(['middleware' => ['web'], 'prefix' => 'categories', 'namespace' => 'Modules\Brand\Http\Controllers\Frontend'], function()
+{
+  Route::get('/products/{brand_slug}/{categroy_slug}', 'BrandController@product')->name('brands.products');
+});

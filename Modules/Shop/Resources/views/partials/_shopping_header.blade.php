@@ -48,8 +48,8 @@
             <li class="">
               <a href="#">Markalar</a>
               <ul class="sub-menu">
-                @foreach(Modules\Category\Entities\Category::where('head_category_id',1)->get() as $category )
-                <li><a href="{{route('categories.products',$category->slug)}}">{{$category->name}}</a></li>
+                @foreach(Modules\Brand\Entities\Brand::all() as $brand )
+                <li><a href="{{route('brands.products',["brand_slug" => $brand->slug,"category_slug" => "none"])}}">{{$brand->name}}</a></li>
               @endforeach
               </ul>
             </li>
