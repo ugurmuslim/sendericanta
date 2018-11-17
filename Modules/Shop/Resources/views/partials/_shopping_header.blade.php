@@ -34,8 +34,8 @@
 
         <!-- Logo desktop -->
         <a href="{{route('shop.index')}}" class="logo">
-          ŞEN LOGO
-        {{--  <img src="{{asset('modules/shop/images/logos/petit-butix.jpg')}}" class="rounded-circle" alt="petit-logo">--}}
+
+          <img src="{{asset('modules/shop/images/logos/sen_deri_logo.jpeg')}}" class="rounded-circle" alt="sen-deri-logo">
         </a>
 
         <!-- Menu desktop -->
@@ -131,7 +131,7 @@
   <!-- Logo moblie -->
   <div class="logo-mobile">
     <a href="{{route('shop.index')}}">
-      <img src="{{asset('modules/shop/images/logos/petit-butix.jpg')}}" class="rounded-circle" alt="petit-logo">
+      <img src="{{asset('modules/shop/images/logos/sen_deri_logo.jpeg')}}" class="rounded-circle" alt="sen-deri--logo">
     </a>
   </div>
 
@@ -196,6 +196,11 @@
       <a href="{{route('shop.index')}}">{{__('views.shop.menu_home')}}</a>
     </li>
     <li class="">
+        @foreach(Modules\Category\Entities\Category::where('head_category_id',1)->get() as $category )
+        <li><a href="{{route('categories.products',$category->slug)}}">{{$category->name}}</a></li>
+      @endforeach
+    </li>
+    <li class="">
         @foreach(Modules\Category\Entities\Category::where('head_category_id',2)->get() as $category )
         <li><a href="{{route('categories.products',$category->slug)}}">{{$category->name}}</a></li>
       @endforeach
@@ -211,20 +216,9 @@
       @endforeach
     </li>
     <li class="">
-      <a href="#">Çanta</a>
-      <ul class="sub-menu">
         @foreach(Modules\Category\Entities\Category::where('head_category_id',5)->get() as $category )
         <li><a href="{{route('categories.products',$category->slug)}}">{{$category->name}}</a></li>
       @endforeach
-      </ul>
-    </li>
-    <li class="">
-      <a href="#">Aksesuar</a>
-      <ul class="sub-menu">
-        @foreach(Modules\Category\Entities\Category::where('head_category_id',6)->get() as $category )
-        <li><a href="{{route('categories.products',$category->slug)}}">{{$category->name}}</a></li>
-      @endforeach
-      </ul>
     </li>
     <li>
       <a href="{{route('shop.contact')}}">{{__('views.shop.menu_contact')}}</a>
