@@ -104,6 +104,29 @@
           <li>
             <a>
               <i class="fa fa-list"></i>
+              {{ __('views.backend.section.navigation.menu_brands') }}
+              <span class="fa fa-chevron-down"></span>
+            </a>
+            <ul class="nav child_menu">
+              <li>
+                <a href="{{ route('brands.create') }}">
+                  {{ __('views.backend.section.navigation.menu_brands_create') }}
+                </a>
+              </li>
+              <li>
+                <a href="{{ route('brands.index') }}">
+                  {{ __('views.backend.section.navigation.menu_brands_index') }}
+                </a>
+              </li>
+
+            </ul>
+          </li>
+        </ul>
+
+        <ul class="nav side-menu">
+          <li>
+            <a>
+              <i class="fa fa-list"></i>
               {{ __('views.backend.section.navigation.menu_sales') }}
               <span class="fa fa-chevron-down"></span>
             </a>

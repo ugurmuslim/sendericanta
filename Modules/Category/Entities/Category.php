@@ -34,6 +34,11 @@ class Category extends Model
     return $query->where('slug',$slug)->first();
   }
 
+  public function scopeGetSubCategories($query){
+    return $query->where('head_category_id','!=',null)->get();
+  }
+
+
   public function scopeGetAllRelatedCategories($query,$slug) {
     return $query->where('head_category_id',$this->getCategory($slug)->id)->get();
   }

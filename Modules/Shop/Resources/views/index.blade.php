@@ -107,11 +107,31 @@
 			@endforeach
 		@endif
 		</div>
---}}
+
 		<div class="mt-5">
 
 		@include('shop::partials._products_filter')
 	</div>
+--}}
+<div class="row isotope-grid">
+	@foreach($brands as $brand)
+		@if($brand->image()->first())
+			<div class="col-sm-6 col-md-2 col-lg-1 p-b-35 isotope-item ">
+				<!-- Block2 -->
+				<div class="block2 product_block2">
+					{{-- Eğer hover yapılınca fotografın yakınlaşmasını istersek hov-img0--}}
+					<div class="block2-pic">
+						<a href="#">
+							<img src="{{asset('images/brands/200-230/' . $brand->image->name)}}" style="width:70px; height:77px;" alt="{{$brand->slug}}">
+						</a>
+					</div>
+
+
+						</div>
+					</div>
+		@endif
+	@endforeach
+</div>
 
 	<div class="p-b-45">
 		<h3 class="ltext-106 cl5 txt-center">

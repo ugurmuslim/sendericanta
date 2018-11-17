@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
 use Modules\Category\Entities\Category;
+use Modules\Brand\Entities\Brand;
 use Modules\Product\Entities\Product;
 use Modules\Cart\Emails\SendSaleSuccess;
 use Mail;
@@ -38,13 +39,14 @@ class ShopController extends Controller
       $accessuar_products = Product::where('deleted',false)->whereIn('category_id',$category->getCategoryIds('kadin',$cache_accesuar))->orderBy('id','DESC')->take(8)->get();
       $bag_products = Product::where('deleted',false)->whereIn('category_id',$category->getCategoryIds('tamir',$cache_bags))->orderBy('id','DESC')->take(8)->get();
       $categories = Category::all();
-
+      $brands = Brand::all();
         return view('shop::index')
         ->with('butix_products',$butix_products)
         ->with('accessuar_products',$accessuar_products)
         ->with('bag_products',$bag_products)
         ->with('popular_products',$popular_products)
-        ->withCategories($categories);
+        ->withCategories($categories)
+        ->withBrands($brands);
     }
 
     /**

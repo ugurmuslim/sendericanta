@@ -41,7 +41,7 @@ class CategoryDatabaseSeeder extends Seeder
 
     Category::create([
       'id' => '4',
-      'name' => 'Tamit',
+      'name' => 'Tamir',
       'slug' => 'tamir',
       'number_low' => "16",
       'number_high' => "17",

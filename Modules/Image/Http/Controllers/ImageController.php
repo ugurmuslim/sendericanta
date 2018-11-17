@@ -32,6 +32,7 @@ class ImageController extends Controller
       $location = public_path('images/' . $folder_name . '/' . $filename);
       $location_200_230 = public_path('images/' .$folder_name  .  '/200-230/'. $filename);
       Image::make($image)->resize(1200, 1200)->save($location);
+
       Image::make($image)->resize(200, 230)->save($location_200_230);
     }
   }

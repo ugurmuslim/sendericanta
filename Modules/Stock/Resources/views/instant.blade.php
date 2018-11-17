@@ -36,6 +36,16 @@
             @endforeach
           </select>
 
+          {{ Form::label('brand_id','Marka İsmi:',['class'=>'form-spacing-top']) }}
+          <select class="form-control select2" style="height:40px;" name="brand_id">
+            <option value=''>Yok</option>
+
+            @foreach($brands as $brand)
+              <option value='{{ $brand->id }}'@if(old('brand_id') == $brand->id) selected @endif>{{ $brand->name }}</option>
+              @endforeach
+            </select>
+
+
           {{ Form::label('entry_price','Giriş Fiyatı:',['class'=>'form-spacing-top']) }}
           {{ Form::number('entry_price',null,['class'=>'form-control','step'=>'any','required' => '','data-parsley-type' => 'number'])}}
 

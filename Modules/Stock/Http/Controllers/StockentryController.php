@@ -8,6 +8,7 @@ use Illuminate\Routing\Controller;
 use Modules\Product\Entities\Product;
 use Modules\Category\Entities\Category;
 use Modules\Stock\Entities\Stockentry;
+use Modules\Brand\Entities\Brand;
 use Modules\Unit\Entities\Unit;
 use DB;
 use Auth;
@@ -40,10 +41,12 @@ class StockentryController extends Controller
     $units = Unit::all();
     $attribute_names = Attributename::all();
     $attributes = Attribute::all();
+    $brands = Brand::all();
     return view('stock::instant')->withCategories($categories)
     ->withUnits($units)
     ->withAttributenames($attribute_names)
-    ->withAttributes($attributes);
+    ->withAttributes($attributes)
+    ->withBrands($brands);
   }
 
   public function instantStore(Request $request)
@@ -68,6 +71,7 @@ class StockentryController extends Controller
     $product->name = $request->name;
     $product->category_id = $request->category_id;
     $product->unit_id = $request->unit_id;
+    $product->brand_id = $request->brand_id;
     $product->price = $request->price;
     $product->details = $request->details;
     $product->size_track = $request->size_track;
@@ -109,6 +113,7 @@ class StockentryController extends Controller
     $product = $product->productSlug($slug)->first();
     $attribute_names = Attributename::all();
     $attributes = Attribute::all();
+    $brands = Brand::all();
     return view('stock::add')->withProduct($product)
     ->withAttributenames($attribute_names)
     ->withAttributes($attributes);

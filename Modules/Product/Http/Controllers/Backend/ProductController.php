@@ -11,6 +11,7 @@ use Modules\Unit\Entities\Unit;
 use Modules\Stock\Entities\Stockentry;
 use Modules\Attribute\Entities\Attribute;
 use Modules\Attribute\Entities\Attributename;
+use Modules\Brand\Entities\Brand;
 use DB;
 use Image;
 class ProductController extends Controller
@@ -36,9 +37,11 @@ class ProductController extends Controller
     $categories = Category::orderBy('id','asc')->get();
     $units = Unit::all();
     $attribute_names = Attributename::all();
+    $brands = Brand::all();
     return view('product::create')->withCategories($categories)
     ->withUnits($units)
-    ->withAttribute($attribute_names);
+    ->withAttribute($attribute_names)
+    ->withBrands($brands);
   }
 
   /**
@@ -71,6 +74,7 @@ class ProductController extends Controller
     'slug' => $slug,
     'details' => request('details'),
     'category_id' => request('category_id'),
+    'brand_id' => request('brand_id'),
     'unit_id' => request('unit_id'),
     'price' => request('price'),
     'size_track' => request('size_track'),
