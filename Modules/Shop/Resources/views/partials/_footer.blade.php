@@ -17,7 +17,7 @@
         </h4>
 
         <p class="stext-107 cl7">
-          Sorunuz mu var? 0532 640 56 18 numarasından ulaşabilirsiniz.
+          Sorunuz mu var? 0532 691 64 15 numarasından ulaşabilirsiniz.
         </p>
 
         <div class="p-t-27 ml-4">

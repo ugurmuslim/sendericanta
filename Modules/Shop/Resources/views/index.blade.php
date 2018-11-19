@@ -1,5 +1,5 @@
 @extends('shop::layouts.master')
-@section('title','ŞEN DERİ MAĞAZA |')
+@section('title','ÇANTA TAMİR, KEMER TAMİR, VALİZ TAMİR VE SATIŞLARI BEYOĞLU |')
 @section('content')
 	<style media="screen">
 	.product_block2
@@ -114,7 +114,12 @@
 		@include('shop::partials._products_filter')
 	</div>
 --}}
-<div class="row isotope-grid">
+
+<div class="text-106 cl5 text-center">
+	<h3>Çanta Tamir, Kemer Tamir, Valiz Tamir ve Satışları Beyğlunda sizlerle...</h3>
+</div>
+
+<div class="row isotope-grid mt-5">
 	@foreach($brands as $brand)
 		@if($brand->image()->first())
 			<div class="col-sm-6 col-md-2 col-lg-1 p-b-35 isotope-item ">
