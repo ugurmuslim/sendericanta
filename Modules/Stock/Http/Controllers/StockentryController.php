@@ -213,6 +213,7 @@ class StockentryController extends Controller
           'color_id'=>$stock['color_id'],
           'quantity'=> $stock_difference,
           'entry_price'=> $entry_price,
+          'price'=> $entry_price*$stock_difference,
           'vendor_id'=> null,
           'package' =>$stock_movement_package
               ]]);

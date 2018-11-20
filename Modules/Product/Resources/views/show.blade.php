@@ -164,9 +164,8 @@
       </div>
       <div class="row mt-5">
         <div class="col-md-6 border_right">
-          <button type="button" name="button" class="btn btn-success mt-5">Topla Giriş Miktarı : {{$product->sizes2()->sum('quantity')}} {{$product->unit->name}}</button><br>
-          <button type="button" name="button" class="btn btn-success mt-5">Topla Giriş Miktarı : {{$product->sizes2()->sum('entry_price')}} <span class="simge-tl" >&#8378;</span> </button>
-
+          <button type="button" name="button" class="btn btn-success mt-5">Toplam Giriş Miktarı : {{$product->sizes2()->sum('quantity')}} {{$product->unit->name}}</button><br>
+          <button type="button" name="button" class="btn btn-success mt-5">Toplam Giriş Miktarı : {{$product->sizes2()->sum('price')}} <span class="simge-tl" >&#8378;</span> </button>
           <table class="table">
             <thead>
               <tr>

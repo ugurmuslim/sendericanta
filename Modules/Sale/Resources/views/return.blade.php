@@ -206,14 +206,13 @@
 
                 var $product_row = '<tr class="table_row" id=' + $i + '>' +
                   '<td><button type="button" class="close" style = "font-size:30px;" aria-label="Close"><span aria-hidden="true">&times;</span></button></td>' +
-                  '<td class="product_id col-md-1" ><input type="number" name="product_human_id['+$i+']" value ="'+ $product.product_id +'" readonly ></td>' +
-                  '<td class="product_size col-md-1"><input type="text" style="width:100px;" name="product_size['+$i+']" value ="'+ $size.attribute_long +'" disabled ></input></td>' +
-                  '<td class="product_size col-md-1"><input type="text" style="width:100px;" name="product_size['+$i+']" value ="'+ $color.attribute_long +'" disabled ></input></td>' +
-                  '<td class="product_name"><input type="text" name="product_name['+$i+']"style="width:300px;" value="' +$product.name +  '" readonly></td>' +
+                  '<td class="product_id col-md-1" ><input type="number" name="product_human_id['+$i+']" value ="'+ $product.product_id +'" style="width:75px;" readonly ></td>' +
+                  '<td class="product_size col-md-1"><input type="text" style="width:70px;" name="product_size['+$i+']" value ="'+ $size.attribute_long +'" disabled ></input></td>' +
+                  '<td class="product_size col-md-1"><input type="text" style="width:70px;" name="product_size['+$i+']" value ="'+ $color.attribute_long +'" disabled ></input></td>' +
+                  '<td class="product_name"><input type="text" name="product_name['+$i+']"style="width:200px;" value="' +$product.name +  '" readonly></td>' +
                   $a +
                   '<td class="item_quantity col-md-1" id=' +$i +'><input id="table_quantity'+$i +'"class ="item_quan" style="width:40px;"  name="quantity['+$i+']" type="number" value=' + $quan + '></td>' +
-                  '<td class="item_price col-md-1"><button id="item_price'+$i+ '" class="btn btn-danger btn-sm" >' + ($quan * $product.price*(-1)).toFixed(2) + ' TL</button></td>' +
-                  '<td><button id="campaign'+$i+ '" class="campaign btn btn-warning btn-sm " value=' + $campaign.id+ '>' + $campaign.name + ' </button></td>' +
+                  '<td class="item_price col-md-1"><button id="item_price'+$i+ '" class="btn btn-success btn-sm" >' + ($quan * $product.price).toFixed(2) + ' TL</button></td>' +
                   '<td class="product_size col-md-1"><input type="text" style="width:100px;" name="product_id['+$i+']" value ="'+ $product.id  +'" hidden ></input></td>' +
                   '<td><input type="text" style="width:100px;" name="product_size['+$i+']" value ="'+ $size.id  +'" hidden ></input></td>' +
                   '<td><input type="text" style="width:100px;" name="product_color['+$i+']" value ="'+ $color.id  +'" hidden ></input></td>' +
@@ -221,6 +220,8 @@
                   $($product_row).prependTo($table_rows)
                   $get = 0;
                   total();
+
+
                 }
                 $('.non_barcode_name').val('');
                 $('.non_barcode_price').val('');
@@ -253,7 +254,8 @@
               $discount_value = $disc.replace(/[^\w]+/g, "");
               var $discount_row ='<td><button type="button" class="close" style = "font-size:30px;  aria-label="Close"><span aria-hidden="true">&times;</span></button></td>' +
               '<td class="product_id col-md-1"><input type="number"  name="product_id['+$i+']" value ="3" readonly></td>' +
-              '<td class="product_size col-md-1"><input type="number" style="width:40px;" name="product_size['+$i+']" value ="99" readonly></input></td>' +
+              '<td class="product_size col-md-1"><input type="number" style="width:40px;" name="product_size['+$i+']" value ="Beden Yok" readonly></input></td>' +
+              '<td class="product_size col-md-1"><input type="text" style="width:70px;" name="product_size['+$i+']" value ="Renk Yok" disabled ></input></td>' +
               '<td class="product_name col-md-1"><input type="text"  name="product_name['+$i+']" value="İndirim" readonly></td>' +
               '<td class="product_price col-md-1" ><input id="product_price'+$i+ '" name="product_price['+$i+']" name="product_price['+$i+']" type="number" value="'+(-$discount_value)+'"readonly></td>' +
               '<td class="item_quantity col-md-1" id=' +$i +'><input id="table_quantity'+$i +'" style="width:40px;" name="quantity['+$i+']" type="number" value="1" readonly></td>' +

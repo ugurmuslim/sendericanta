@@ -61,6 +61,7 @@ class Productsale extends Model
   }
 
   public function store($request) {
+
     $last_package = $this-> orderBy('id','DESC')->first();
     $sale_package = $this->createSalePackageNumber($last_package);
 

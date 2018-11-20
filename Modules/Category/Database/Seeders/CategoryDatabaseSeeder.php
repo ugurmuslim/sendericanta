@@ -164,5 +164,40 @@ class CategoryDatabaseSeeder extends Seeder
       'number_low' => "220000",
       'number_high' => "229999",
       ]);
+
+      Category::create([
+        'id' => '101',
+        'name' => 'Kampanya',
+        'slug' => 'Kampanya',
+        'number_low' => "101",
+        'number_high' => "102",
+      ]);
+
+      Category::create([
+        'id' => '102',
+        'name' => 'Komisyon',
+        'slug' => 'Komisyon',
+        'number_low' => "102",
+        'number_high' => "103",
+      ]);
+
+
+      Category::create([
+        'id' => '103',
+        'name' => 'İndirim',
+        'slug' => 'indirim',
+        'number_low' => "103",
+        'number_high' => "104",
+      ]);
+
+
+      Category::create([
+        'id' => '104',
+        'name' => 'Barkodsuz Ürün',
+        'slug' => 'barkodsuz-ürün',
+        'number_low' => "104",
+        'number_high' => "105",
+      ]);
+
     }
   }

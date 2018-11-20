@@ -267,12 +267,15 @@
               $discount_value = $disc.replace(/[^\w]+/g, "");
               var $discount_row ='<td><button type="button" class="close" style = "font-size:30px;  aria-label="Close"><span aria-hidden="true">&times;</span></button></td>' +
               '<td class="product_id col-md-1"><input type="number"  name="product_human_id['+$i+']" value ="3" readonly></td>' +
-              '<td class="product_size col-md-1"><input type="number" style="width:40px;" name="product_size['+$i+']" value ="99" readonly></input></td>' +
+              '<td class="product_size col-md-1"><input type="text" style="width:40px;" name="product_size['+$i+']" value ="Beden Yok" readonly></input></td>' +
+              '<td class="product_size col-md-1"><input type="text" style="width:70px;" name="product_color['+$i+']" value ="Renk Yok" disabled ></input></td>' +
               '<td class="product_name col-md-1"><input type="text"  name="product_name['+$i+']" value="İndirim" readonly></td>' +
               '<td class="product_price col-md-1" ><input id="product_price'+$i+ '" name="product_price['+$i+']" name="product_price['+$i+']" type="number" value="'+(-$discount_value)+'"readonly></td>' +
               '<td class="item_quantity col-md-1" id=' +$i +'><input id="table_quantity'+$i +'" style="width:40px;" name="quantity['+$i+']" type="number" value="1" readonly></td>' +
               '<td class="item_price"><button id="item_price'+$i+ '" class=" btn-danger btn-sm" >'+ (-$discount_value) +' TL</button></td>' +
-              '<td><input type="text" style="width:100px;" name="product_id['+$i+']" value ="3" hidden ></input></td>'
+              '<td class="product_size col-md-1"><input type="text" style="width:100px;" name="product_id['+$i+']" value ="'+ 1  +'" hidden ></input></td>' +
+              '<td><input type="number" style="width:100px;" name="product_size['+$i+']" value ="'+ {{Modules\Attribute\Entities\Attribute::where('attribute_human_id',98)->first()->id}}  +'" hidden ></input></td>' +
+              '<td><input type="number" style="width:100px;" name="product_color['+$i+']" value ="'+ {{Modules\Attribute\Entities\Attribute::where('attribute_human_id',99)->first()->id}}  +'" hidden ></input></td>'
               $($discount_row).appendTo($discount);
               total();
             });
@@ -283,12 +286,15 @@
               $credit_card_value = $credit.replace(/[^\w]+/g, "");
               var $credit_row ='<td><button type="button" class="close" style = "font-size:30px;  aria-label="Close"><span aria-hidden="true">&times;</span></button></td>' +
               '<td class="product_id col-md-1"><input type="number"  name="product_human_id['+$i+']" value ="2" readonly></td>' +
-              '<td class="product_size col-md-1"><input type="number" style="width:40px;" name="product_size['+$i+']" value ="99" readonly></input></td>' +
+              '<td class="product_size col-md-1"><input type="text" style="width:40px;" name="product_size['+$i+']" value ="Beden Yok" readonly></input></td>' +
+              '<td class="product_size col-md-1"><input type="text" style="width:70px;" name="product_size['+$i+']" value ="Renk Yok" disabled ></input></td>' +
               '<td class="product_name col-md-1"><input type="text"  name="product_name['+$i+']" value="Komisyon" readonly></td>' +
               '<td class="product_price col-md-1" ><input id="product_price'+$i+ '" name="product_price['+$i+']" name="product_price['+$i+']" type="number" value="'+$credit_card_value+'"readonly></td>' +
               '<td class="item_quantity col-md-1" id=' +$i +'><input id="table_quantity'+$i +'" style="width:40px;" name="quantity['+$i+']" type="number" value="1" readonly></td>' +
               '<td class="item_price"><button id="item_price'+$i+ '" class=" btn-success btn-sm" >' + $credit_card_value +' TL</button></td>' +
-              '<td><input type="text" style="width:100px;" name="product_id['+$i+']" value ="2" hidden ></input></td>'
+              '<td class="product_size col-md-1"><input type="text" style="width:100px;" name="product_id['+$i+']" value ="'+ 2  +'" hidden ></input></td>' +
+              '<td><input type="number" style="width:100px;" name="product_size['+$i+']" value ="'+ {{Modules\Attribute\Entities\Attribute::where('attribute_human_id',98)->first()->id}}  +'" hidden ></input></td>' +
+              '<td><input type="number" style="width:100px;" name="product_color['+$i+']" value ="'+ {{Modules\Attribute\Entities\Attribute::where('attribute_human_id',99)->first()->id}}  +'" hidden ></input></td>'
               $($credit_row).appendTo($charge);
               total();
             });
