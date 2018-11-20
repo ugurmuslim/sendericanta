@@ -31,7 +31,7 @@ class AdminSaleSuccess extends Mailable
   */
   public function build()
   {
-    return $this->from('iletisim@petitstore.com')
+    return $this->from('iletisim@sendericanta.com')
     ->subject('Siparişin Var!')
     ->view('cart::emails.adminsalesuccess')
     ->with(['product_sale'=>$this->product_sale,

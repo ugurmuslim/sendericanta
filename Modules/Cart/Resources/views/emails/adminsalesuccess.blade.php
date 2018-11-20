@@ -9,7 +9,7 @@
   <body>
     <div class="text-center" style="background-color:#717fe0; padding:5% 5%">
       <h2 style="color:white;">
-    PETITSTORE</h2>
+    ŞEN DERİ ÇANTA</h2>
     </div>
 
     <div class="container mt-5">

@@ -31,7 +31,7 @@ class SendSaleSuccess extends Mailable
   */
   public function build()
   {
-    return $this->from('iletisim@petitstore.com')
+    return $this->from('iletisim@sendericanta.com')
     ->subject('Siparişiniz Verildi!')
     ->view('cart::emails.salesuccess')
     ->with(['product_sale'=>$this->product_sale,
