@@ -56,8 +56,8 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'laravel-boilerplate@local.local'),
-        'name' => env('MAIL_FROM_NAME', 'Laravel Boilerplate'),
+        'address' => env('MAIL_FROM_ADDRESS', 'kayit@sendericanta.com'),
+        'name' => env('MAIL_FROM_NAME', 'Sen Deri Çanta'),
     ],
 
     /*
