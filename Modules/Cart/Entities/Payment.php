@@ -144,7 +144,7 @@ class Payment extends Model
   //  Paytr için bu değişkenleri aşağıdaki fonksiyona ekle :: $statu,$sale_package
   public function saveProductSale($row, $sale_package) {
     //Pay_tr de aşağısı commentleniyor
-  
+
     //Commentlenecek yer bitti.
     $total_price = 0;
     $customer_id = Auth::user()->id;
@@ -193,7 +193,7 @@ class Payment extends Model
     Cart::destroy();
 
 Mail::to(Auth::user())->send(new SendSaleSuccess($product_sale->sale_package,$adress_id));
-Mail::to(User::where('id','1')->first())->send(new AdminSaleSuccess($product_sale->sale_package,$adress_id));
+Mail::to(User::where('email','ugur.muslim@gmail.com')->first())->send(new AdminSaleSuccess($product_sale->sale_package,$adress_id));
 Session::flash('success','Ödemeniz Alındı');
 
 }
