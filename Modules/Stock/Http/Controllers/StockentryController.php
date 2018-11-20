@@ -37,7 +37,7 @@ class StockentryController extends Controller
 
   public function instant()
   {
-    $categories = Category::orderBy('id','asc')->get();
+    $categories = Category::getSubCategories();
     $units = Unit::all();
     $attribute_names = Attributename::all();
     $attributes = Attribute::all();

@@ -34,7 +34,7 @@ class ProductController extends Controller
   */
   public function create()
   {
-    $categories = Category::orderBy('id','asc')->get();
+    $categories = Category::getSubCategories();
     $units = Unit::all();
     $attribute_names = Attributename::all();
     $brands = Brand::all();
