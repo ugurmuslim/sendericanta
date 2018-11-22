@@ -2,16 +2,12 @@
 <html lang="en">
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125905724-1"></script>
-  <script>
-  </script>
 
 <title>@yield('title') ŞEN DERİ ÇANTA</title>
 <meta charset="UTF-8">
 <meta name="description" content="Şen Deri Çanta kaliteli ürünleri ucuza bulabildiğiniz bir platformdur. Giyim , Aksesuar, Çanta kategorilerinde 100'den fazla ürün sizi bekliyor.">
 <meta name="keywords" content="çanta satış, e-ticaret, kemer satış, çanta tamir, kemer tamir, çanta, kemer, valiz, valiz tamir,uygun fiyat valiz, uygun fiyat çanta,
 çanta tasarım, kemer tasarım, valiz tasarım">
-<meta name="yandex-verification" content="3ea7ec4066c67a32" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 @include('shop::partials._shopping_head')
 @yield('shop_styles')

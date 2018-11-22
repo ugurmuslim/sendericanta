@@ -37,15 +37,18 @@ class ShopController extends Controller
       $unisex_bags = "Unisex_Cache";
 
       $category = new Category;
-      $men_products = Product::where('deleted',false)->whereIn('category_id',$category->getCategoryIds('erkek',$men_bags))->orderBy('id','DESC')->take(8)->get();
-      $women_products = Product::where('deleted',false)->whereIn('category_id',$category->getCategoryIds('kadin',$woman_bags))->orderBy('id','DESC')->take(8)->get();
-      $unisex_products = Product::where('deleted',false)->whereIn('category_id',$category->getCategoryIds('unisex',$unisex_bags))->orderBy('id','DESC')->take(8)->get();
+      $products = Product::orderBy('id','DESC')->take(40)->get();
+
+    //  $men_products = Product::where('deleted',false)->whereIn('category_id',$category->getCategoryIds('erkek',$men_bags))->orderBy('id','DESC')->take(8)->get();
+    //  $women_products = Product::where('deleted',false)->whereIn('category_id',$category->getCategoryIds('kadin',$woman_bags))->orderBy('id','DESC')->take(8)->get();
+    //  $unisex_products = Product::where('deleted',false)->whereIn('category_id',$category->getCategoryIds('unisex',$unisex_bags))->orderBy('id','DESC')->take(8)->get();
       $categories = Category::all();
       $brands = Brand::all();
         return view('shop::index')
-        ->with('men_products',$men_products)
-        ->with('women_products',$women_products)
-        ->with('unisex_products',$unisex_products)
+        ->withProducts($products)
+        //->with('men_products',$men_products)
+        //->with('women_products',$women_products)
+        //->with('unisex_products',$unisex_products)
         ->with('popular_products',$popular_products)
         ->withCategories($categories)
         ->withBrands($brands);

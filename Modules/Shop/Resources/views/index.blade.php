@@ -116,7 +116,7 @@
 --}}
 
 <div class="text-106 cl5 text-center">
-	<h3>Çanta Tamir, Kemer Tamir, Valiz Tamir ve Satışları Beyğlunda sizlerle...</h3>
+	<h3>Çanta Tamir, Kemer Tamir, Valiz Tamir ve Satışları Beyoğlun'da sizlerle...</h3>
 </div>
 
 <div class="row isotope-grid mt-5">
@@ -126,7 +126,7 @@
 				<!-- Block2 -->
 				<a href="{{route('brands.products',["brand_slug" => $brand->slug,"category_slug" => "none"])}}">
 
-				<div class="block2 product_block2">
+				<div class="block2 brand_logo_block2">
 					{{-- Eğer hover yapılınca fotografın yakınlaşmasını istersek hov-img0--}}
 					<div class="block2-pic">
 							<img src="{{asset('images/brands/200-230/' . $brand->image->name)}}" style="width:70px; height:77px;" alt="{{$brand->slug}}">
@@ -140,13 +140,14 @@
 	@endforeach
 </div>
 
-	<div class="p-b-45">
+{{--	<div class="p-b-45">
 		<h3 class="ltext-106 cl5 txt-center">
 			{{__('views.shop.shop_men_bags')}}
 		</h3>
-	</div>
+	</div>--}}
 		<div class="row isotope-grid" id="butix_products">
-			@foreach($men_products as $product)
+		{{--	@foreach($men_products as $product)--}}
+			@foreach($products as $product)
 				@if($product->images()->mainImage()->first())
 
 					<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item {{$product->category->slug}}">
@@ -182,7 +183,7 @@
 			</h3>
 		</div>
 		--}}
-		<div class="p-b-45 mt-5">
+{{--		<div class="p-b-45 mt-5">
 			<h3 class="ltext-106 cl5 txt-center">
 				{{__('views.shop.shop_women_bags')}}
 			</h3>
@@ -216,7 +217,7 @@
 				@endif
 			@endforeach
 		</div>
-
+--}}
 		{{--<div class="p-b-45 mt-5">
 			<h3 class="ltext-106 cl5 txt-center">
 				{{__('views.shop.shop_unisex_bags')}}
