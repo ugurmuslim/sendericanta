@@ -14,6 +14,6 @@ public function categories() {
 }
 
   public function image() {
-    return  $this->hasOne('Modules\Image\Entities\Image','type_id');
+    return  $this->hasOne('Modules\Image\Entities\Image','type_id')->where('type',3);
   }
 }
