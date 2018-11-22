@@ -8,8 +8,8 @@
 		<!-- Product -->
 		<div class="bg0 m-t-23 p-b-140">
 			<div class="container">
-				@include('shop::partials._products_filter')
-
+			{{--	@include('shop::partials._products_filter')
+--}}
 				<div class="row isotope-grid">
 					@foreach($products as $product)
 						@if($product->images()->mainImage()->first())
