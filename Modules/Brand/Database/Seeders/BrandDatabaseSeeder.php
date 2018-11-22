@@ -47,6 +47,11 @@ class BrandDatabaseSeeder extends Seeder
         ]);
 
         Brand::create([
+          'name' => 'ÇÇS',
+          'slug' => 'ccs',
+        ]);
+
+        Brand::create([
           'name' => 'Delsey',
           'slug' => 'delsey',
         ]);
