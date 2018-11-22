@@ -46,7 +46,23 @@
           <div class="flex-col-l-m h-full p-t-100 p-b-30 respon5">
             <div class="layer-slick1 animated visible-false" data-appear="rollIn" data-delay="0">
               <span class="ltext-101 cl2 respon2">
-                <img src="{{asset('modules/shop/images/logos/kipling1.png')}}" alt="">
+                <div class="row">
+                  <div class="col-md-6">
+                  <img src="{{asset('modules/shop/images/logos/columbia2.png')}}" alt="">
+                </div>
+                <div class="col-md-6">
+                  <img src="{{asset('modules/shop/images/logos/DELSEY2.png')}}" alt="">
+                </div>
+                </div>
+                <div class="row mt-5">
+                  <div class="col-md-6">
+                    <img src="{{asset('modules/shop/images/logos/fouvor2.png')}}" alt="">
+                </div>
+                <div class="col-md-6">
+                  <img src="{{asset('modules/shop/images/logos/Hummel2.png')}}" alt="">
+                </div>
+
+                </div>
               </span>
             </div>
 
