@@ -113,11 +113,11 @@
 
 		@include('shop::partials._products_filter')
 	</div>
---}}
 
 <div class="text-106 cl5 text-center">
 	<h3>Çanta Tamir, Kemer Tamir, Valiz Tamir ve Satışları Beyoğlun'da sizlerle...</h3>
 </div>
+--}}
 
 <div class="row isotope-grid mt-5">
 	@foreach($brands as $brand)
@@ -145,7 +145,7 @@
 			{{__('views.shop.shop_men_bags')}}
 		</h3>
 	</div>--}}
-		<div class="row isotope-grid" id="butix_products">
+		<div class="row isotope-grid mt-5" id="butix_products">
 		{{--	@foreach($men_products as $product)--}}
 			@foreach($products as $product)
 				@if($product->images()->mainImage()->first())
