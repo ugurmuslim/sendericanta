@@ -52,7 +52,7 @@ class AttributeDatabaseSeeder extends Seeder
         'attribute_long' => "Sarı",
       ]);
 
-      Attribute::insert([
+  /*    Attribute::insert([
         'attribute_human_id' => '13',
         'attribute_id' => "2",
         'attribute_short' => "XS",
@@ -84,7 +84,7 @@ class AttributeDatabaseSeeder extends Seeder
         'attribute_short' => "XL",
         'attribute_long' => "XLarge",
       ]);
-
+*/
 
       Attributename::insert([
         'name' => 'Renk',

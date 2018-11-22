@@ -41,7 +41,7 @@
         </div>
       </div>
 
-      <div class="item-slick1" style="background-image: url(modules/shop/images/slide-bag-2.jpg);">
+      <div class="item-slick1" style="background-image: url();">
         <div class="container h-full">
           <div class="flex-col-l-m h-full p-t-100 p-b-30 respon5">
             <div class="layer-slick1 animated visible-false" data-appear="rollIn" data-delay="0">
@@ -65,7 +65,7 @@
         </div>
       </div>
 
-      <div class="item-slick1" style="background-image: url(modules/shop/images/slide-bag-3.jpg);">
+      <div class="item-slick1" style="background-image: url();">
         <div class="container h-full">
           <div class="flex-col-l-m h-full p-t-100 p-b-30 respon5">
             <div class="layer-slick1 animated visible-false" data-appear="rotateInDownLeft" data-delay="0">
