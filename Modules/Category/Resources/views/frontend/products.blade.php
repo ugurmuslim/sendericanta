@@ -24,7 +24,7 @@
 						@if($brand->image()->first())
 							<div class="col-sm-6 col-md-2 col-lg-1 p-b-35 isotope-item ">
 								<!-- Block2 -->
-								<div class="block2 product_block2">
+								<div class="block2 brand_logo_block2">
 									{{-- Eğer hover yapılınca fotografın yakınlaşmasını istersek hov-img0--}}
 									<div class="block2-pic">
 										<a href="{{route('brands.products',['brand_slug'=>$brand->slug,'category_slug'=>$category->slug])}}">
@@ -38,10 +38,7 @@
 						@endif
 					@endforeach
 				</div>
-
-
-
-				<div class="row isotope-grid mt-5">
+				<div class="row isotope-grid mt-2">
 					@foreach($products as $product)
 						@if($product->images()->mainImage(1)->first())
 							<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item {{$product->category->name}}">
