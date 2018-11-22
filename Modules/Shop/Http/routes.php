@@ -5,6 +5,7 @@ Route::group(['middleware' => 'web', 'prefix' => 'shop', 'namespace' => 'Modules
     Route::get('/', 'ShopController@index')->name('shop.index');
     Route::get('/product-detail/{slug}', 'ShopController@productShow')->name('shop.product-detail');
     Route::get('/contact', 'ShopController@contact')->name('shop.contact');
+    Route::post('/contactmail', 'ShopController@contactMail')->name('shop.contactmail');
     Route::get('/checkout', 'ShopController@checkout')->name('shop.checkout');
     Route::get('/privacy-policy', 'ShopController@privacy')->name('shop.privacy');
     Route::get('/cancel-return', 'ShopController@cancelReturn')->name('shop.cancel_return');

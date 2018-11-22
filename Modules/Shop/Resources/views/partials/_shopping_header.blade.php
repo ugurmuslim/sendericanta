@@ -65,12 +65,14 @@
             <li class="">
               <a href="#">Kadın</a>
               <ul class="sub-menu">
+                <li><a href="{{route('categories.products',"sırt-cantasi")}}">{{Modules\Category\Entities\Category::where('head_category_id',1)->first()->name}}</a></li>
+
                 @foreach(Modules\Category\Entities\Category::where('head_category_id',2)->get() as $category )
                 <li><a href="{{route('categories.products',$category->slug)}}">{{$category->name}}</a></li>
               @endforeach
               </ul>
             </li>
-            <li class="">
+            {{--<li class="">
               <a href="#">Unisex</a>
               <ul class="sub-menu">
                 @foreach(Modules\Category\Entities\Category::where('head_category_id',3)->get() as $category )
@@ -78,10 +80,11 @@
               @endforeach
               </ul>
             </li>
+            --}}
             <li class="">
               <a href="#">Valiz</a>
               <ul class="sub-menu">
-                @foreach(Modules\Category\Entities\Category::where('head_category_id',5)->get() as $category )
+                @foreach(Modules\Category\Entities\Category::where('head_category_id',4)->get() as $category )
                 <li><a href="{{route('categories.products',$category->slug)}}">{{$category->name}}</a></li>
               @endforeach
               </ul>
@@ -89,7 +92,7 @@
             <li class="">
               <a href="#">Tamir</a>
               <ul class="sub-menu">
-                @foreach(Modules\Category\Entities\Category::where('head_category_id',4)->get() as $category )
+                @foreach(Modules\Category\Entities\Category::where('head_category_id',5)->get() as $category )
                 <li><a href="{{route('categories.products',$category->slug)}}">{{$category->name}}</a></li>
               @endforeach
               </ul>
@@ -98,7 +101,7 @@
             <li class="">
               <a href="#">Tasarım</a>
               <ul class="sub-menu">
-                @foreach(Modules\Category\Entities\Category::where('head_category_id',5)->get() as $category )
+                @foreach(Modules\Category\Entities\Category::where('head_category_id',6)->get() as $category )
                 <li><a href="{{route('categories.products',$category->slug)}}">{{$category->name}}</a></li>
               @endforeach
               </ul>

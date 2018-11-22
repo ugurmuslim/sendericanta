@@ -7,6 +7,8 @@ use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
 use Modules\Category\Entities\Category;
 use Modules\Brand\Entities\Brand;
+use App\Models\Auth\User\User;
+use Modules\Shop\Emails\SendContactMail;
 use Modules\Product\Entities\Product;
 use Modules\Cart\Emails\SendSaleSuccess;
 use Mail;
@@ -110,6 +112,14 @@ class ShopController extends Controller
     public function contact()
     {
       return view('shop::contact');
+    }
+    public function contactMail(Request $request)
+    {
+      Mail::to(User::where('email','sendericanta@hotmail.com')->first())->send(new SendContactMail($request->email,$request->msg));
+      $request->session()
+      ->flash('success',"Mailinizi Aldık. En kısa sürede Geri Dönüş Yapacağız.");
+      return redirect()->back();
+
     }
     public function privacy()
     {

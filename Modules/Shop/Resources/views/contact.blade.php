@@ -10,9 +10,12 @@
 	<!-- Content page -->
 	<section class="bg0 p-t-104 p-b-116">
 		<div class="container">
+
+			@include('partials._messages')
+
 			<div class="flex-w flex-tr">
 				<div class="size-210 bor10 p-lr-70 p-t-55 p-b-70 p-lr-15-lg w-full-md">
-					<form>
+					{!! Form::open(['route'=>['shop.contactmail'],'data-parsley-validate' => '' ]) !!}
 						<h4 class="mtext-105 cl2 txt-center p-b-30">
 							Mail Gönderin
 						</h4>
@@ -45,7 +48,7 @@
 
 							<p class="stext-115 cl6 size-213 p-t-18">
 								İstiklal Caddesi Asmalı Mescid Mahallesi
- 							Danışman Han Geçidi No : 116/1-C  BEYOĞLU / İSTANBUL
+ 							Hocopulo Geçidi No : 116/1-C  BEYOĞLU / İSTANBUL
 							</p>
 						</div>
 					</div>
@@ -61,7 +64,8 @@
 							</span>
 
 							<p class="stext-115 cl1 size-213 p-t-18">
-
+								0212 244 00 22 <br>
+								0532 691 64 15
 							</p>
 						</div>
 					</div>
@@ -77,7 +81,7 @@
 							</span>
 
 							<p class="stext-115 cl1 size-213 p-t-18">
-								iletisim@sendericanta.com
+								sendericanta@hotmail.com
 							</p>
 						</div>
 					</div>

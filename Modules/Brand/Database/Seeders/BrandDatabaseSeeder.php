@@ -32,6 +32,11 @@ class BrandDatabaseSeeder extends Seeder
 
 
         Brand::create([
+          'name' => 'Vans',
+          'slug' => 'vans',
+        ]);
+
+        Brand::create([
           'name' => 'National Geographic',
           'slug' => 'national-geographic',
         ]);
@@ -67,8 +72,21 @@ class BrandDatabaseSeeder extends Seeder
         ]);
 
         Brand::create([
-          'name' => 'Seahawk',
-          'slug' => 'seahawk',
+          'name' => 'Volunteer',
+          'slug' => 'volunteer',
         ]);
+
+        Brand::create([
+          'name' => 'Pierre Cardin',
+          'slug' => 'pierre-cardin',
+        ]);
+
+        Brand::create([
+          'name' => 'Şen Deri Çanta',
+          'slug' => 'sen-deri-canta',
+        ]);
+
+
+
     }
 }

@@ -124,16 +124,17 @@
 		@if($brand->image()->first())
 			<div class="col-sm-6 col-md-2 col-lg-1 p-b-35 isotope-item ">
 				<!-- Block2 -->
+				<a href="{{route('brands.products',["brand_slug" => $brand->slug,"category_slug" => "none"])}}">
+
 				<div class="block2 product_block2">
 					{{-- Eğer hover yapılınca fotografın yakınlaşmasını istersek hov-img0--}}
 					<div class="block2-pic">
-						<a href="#">
 							<img src="{{asset('images/brands/200-230/' . $brand->image->name)}}" style="width:70px; height:77px;" alt="{{$brand->slug}}">
-						</a>
 					</div>
 
 
 						</div>
+					</a>
 					</div>
 		@endif
 	@endforeach
@@ -216,7 +217,7 @@
 			@endforeach
 		</div>
 
-		<div class="p-b-45 mt-5">
+		{{--<div class="p-b-45 mt-5">
 			<h3 class="ltext-106 cl5 txt-center">
 				{{__('views.shop.shop_unisex_bags')}}
 			</h3>
@@ -250,7 +251,7 @@
 				@endif
 			@endforeach
 		</div>
-
+--}}
 		<!-- Load more -->
 		<div class="flex-c-m flex-w w-full p-t-45">
 			<a href="{{route('products.products')}}" class="flex-c-m stext-101 cl5 size-103 bg2 bor1 hov-btn1 p-lr-15 trans-04">

@@ -1,12 +1,28 @@
 <section class="section-slide">
   <div class="wrap-slick1">
     <div class="slick1">
-      <div class="item-slick1" style="background-image: url(modules/shop/images/slide-bag-1.jpg);">
+      <div class="item-slick1" style="background-image: url(modules/shop/images/north-face-ad-1.jpg);">
         <div class="container h-full">
           <div class="flex-col-l-m h-full p-t-100 p-b-30 respon5">
             <div class="layer-slick1 animated visible-false" data-appear="fadeInDown" data-delay="0">
               <span class="ltext-101 cl2 respon2">
-                <img src="{{asset('modules/shop/images/logos/northface1.png')}}" alt="">
+                <div class="row">
+                  <div class="col-md-6">
+                  <img src="{{asset('modules/shop/images/logos/northface2.png')}}" alt="">
+                </div>
+                <div class="col-md-6">
+                  <img src="{{asset('modules/shop/images/logos/vans-logo1.jpg')}}" alt="">
+                </div>
+                </div>
+                <div class="row mt-5">
+                  <div class="col-md-6">
+                    <img src="{{asset('modules/shop/images/logos/National-Geographic-2.png')}}" alt="">
+                </div>
+                <div class="col-md-6">
+                  <img src="{{asset('modules/shop/images/logos/eastpak1.png')}}" alt="">
+                </div>
+
+                </div>
               </span>
             </div>
 

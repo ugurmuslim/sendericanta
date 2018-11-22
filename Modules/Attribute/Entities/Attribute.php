@@ -26,7 +26,7 @@ class Attribute extends Model
   }
 
     public function setNextHumanId(){
-      $last_id = $this->orderBy('attribute_human_id','desc')->first()->attribute_human_id;
+      $last_id = $this->where('attribute_human_id','<',97)->orderBy('attribute_human_id','desc')->first()->attribute_human_id;
       return ($last_id + 1);
     }
 }
