@@ -5,8 +5,8 @@
 <div><br />
 </div>
 <div>B.<span class="Apple-tab-span"></span>‘SATICI’ ; (sözleşmede bundan sonra "SATICI" olarak anılacaktır)</div>
-<div>AD- SOYAD: DİLAN GİYİM UĞUR MÜSLİM</div>
-<div>ADRES:&nbsp;TOMTOM MAHALLESİ İSTİKLAL CADDESİ NO : 187 d: 58 BEYOĞLU/İSTANBUL</div>
+<div>AD- SOYAD: ŞEN DERİ MAMÜLLERİ İMALAT İTHALAT İHRACAT SANAYİ TİCARET LTD. ŞİRKETİ</div>
+<div>ADRES:&nbsp;ASMALIMESCİT MAHALLESİ İSTİKLAL CADDESİ HAZZOPULO PASAJI  NO:116/1C   BEYOĞLU / İSTANBUL</div>
 <div>İş bu sözleşmeyi kabul etmekle ALICI, sözleşme konusu siparişi onayladığı takdirde sipariş konusu bedeli ve varsa kargo ücreti, vergi gibi belirtilen ek ücretleri ödeme yükümlülüğü altına gireceğini ve bu konuda bilgilendirildiğini peşinen kabul eder.</div>
 <div>2.TANIMLAR</div>
 <div>İşbu sözleşmenin uygulanmasında ve yorumlanmasında aşağıda yazılı terimler karşılarındaki yazılı açıklamaları ifade edeceklerdir.</div>

@@ -31,7 +31,7 @@
         <div class="container">
           <h1 class="mt-5">Ödeme ve Teslimat </h1>
             <div class="mt-3">1) Banka Havalesi veya EFT (Elektronik Fon Transferi) yaparak</div>
-            <div>Yapı Kredi bankası hesabımıza yapabilirsiniz</div>
+            <div>GARANTİ BANKASI, İŞ BANKASI, YAPIKREDİ, FİNANSBANK, AKBANK bankası hesaplarımızdan bir tanesine yapabilirsiniz</div>
             <div><br />
             </div>
             <div>2) Sitemiz üzerinden kredi kartlarınız ile</div>

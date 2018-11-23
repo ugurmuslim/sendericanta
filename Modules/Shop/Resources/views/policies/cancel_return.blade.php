@@ -58,11 +58,10 @@
           </p>
           <h3 class="mt-3">12.SATICININ CAYMA HAKKI BİLDİRİMİ YAPILACAK İLETİŞİM BİLGİLERİ:<h3></h3>
             <p class="mt-2">ŞİRKET</p>
-            <p>ADI / UNVANI: DİLAN GİYİM UĞUR MÜSLİM</p>
-            <p>ADRES:  TOMTOM MAHALLESİ İSTİKLAL CADDESİ BEYOĞLU İŞ MERKEZİ NO : 187 / 58 BEYOĞLU / İSTANBUL</p>
-            <p>EPOSTA: ugur.muslim@gmail.com</p>
-            <p>TEL:  +90 532 640 56 18</p>
-            <p>FAKS: +9 0212 245 48 52</p>
+            <p>ADI / UNVANI: ŞEN DERİ MAMÜLLERİ İMALAT İTHALAT İHRACAT SANAYİ TİCARET LTD. ŞİRKETİ</p>
+            <p>ADRES:  ASMALIMESCİT MAHALLESİ İSTİKLAL CADDESİ HAZZOPULO PASAJI  NO:116/1C   BEYOĞLU / İSTANBUL</p>
+            <p>EPOSTA: sendericanta@hotmail.com</p>
+            <p>TEL:  +90 212 244 00 22</p>
 
             <h4 class="mt-3">CAYMA HAKKININ SÜRESİ:</h4>
             <p class="mt-2">13.Alıcı, satın aldığı eğer bir hizmet  ise, bu 14 günlük süre sözleşmenin imzalandığı tarihten itibaren başlar. Cayma hakkı süresi sona ermeden önce, tüketicinin onayı ile hizmetin ifasına başlanan hizmet sözleşmelerinde cayma hakkı kullanılamaz.</p>
@@ -87,7 +86,7 @@
             <p class="mt-2">23.ALICI, ödeme işlemlerini  kredi kartı ile yaptığı durumda temerrüde düştüğü takdirde, kart sahibi banka ile arasındaki kredi kartı sözleşmesi çerçevesinde faiz ödeyeceğini ve bankaya karşı sorumlu olacağını kabul, beyan ve taahhüt eder. Bu durumda ilgili banka hukuki yollara başvurabilir; doğacak masrafları ve vekâlet ücretini ALICI’dan talep edebilir ve her koşulda ALICI’nın borcundan dolayı temerrüde düşmesi halinde, ALICI, borcun gecikmeli ifasından dolayı SATICI’nın uğradığı zarar ve ziyanını ödeyeceğini kabul eder.
             </p>
             <h4 class="mt-3">ÖDEME VE TESLİMAT</h4>
-            <p class="mt-2">24.Banka Havalesi veya EFT (Elektronik Fon Transferi) yaparak, YAPI KREDİ, bankası hesaplarımızdan (TL) herhangi birine yapabilirsiniz.</p>
+            <p class="mt-2">24.Banka Havalesi veya EFT (Elektronik Fon Transferi) yaparak, GARANTİ BANKASI, İŞ BANKASI, YAPIKREDİ, FİNANSBANK, AKBANK  hesaplarımızdan (TL) herhangi birine yapabilirsiniz.</p>
             <p>25.Sitemiz üzerinden kredi kartlarınız ile, Her türlü kredi kartınıza online tek ödeme ya da online taksit imkânlarından yararlanabilirsiniz. Online ödemelerinizde siparişiniz sonunda kredi kartınızdan tutar çekim işlemi gerçekleşecektir.
             </p>
           </div>

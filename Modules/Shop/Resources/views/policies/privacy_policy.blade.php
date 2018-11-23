@@ -32,7 +32,7 @@
 
           <h1 class="mt-5">Gizlilik ve Güvenlik İçerik Örneği</h1>
 
-  	<div class="mt-5">Mağazamızda verilen tüm servisler ve , TOMTOM MAHALLESİ İSTİKLAL CADDESİ NO : 187 D: 58 BEYOĞLU/İSTANBUL adresinde kayıtlı &nbsp;DİLAN GİYİM UĞUR MÜSLİM .Şti. firmamıza aittir ve firmamız tarafından işletilir.&nbsp;</div>
+  	<div class="mt-5">Mağazamızda verilen tüm servisler ve , ASMALIMESCİT MAHALLESİ İSTİKLAL CADDESİ HAZZOPULO PASAJI  NO:116/1C   BEYOĞLU / İSTANBUL adresinde kayıtlı &nbsp;ŞEN DERİ MAMÜLLERİ İMALAT İTHALAT İHRACAT SANAYİ TİCARET LTD. ŞİRKETİ firmamıza aittir ve firmamız tarafından işletilir.&nbsp;</div>
   	<div><br />
   		</div>
   	<div>Firmamız, çeşitli amaçlarla kişisel veriler toplayabilir. Aşağıda, toplanan kişisel verilerin nasıl ve ne şekilde toplandığı, bu verilerin nasıl ve ne şekilde korunduğu belirtilmiştir.&nbsp;</div>
@@ -104,11 +104,10 @@
   	<div>Gizlilik politikamız ile ilgili her türlü soru ve önerileriniz için ugur.muslim@gmail.com adresine email gönderebilirsiniz. Firmamız’a ait aşağıdaki iletişim bilgilerinden ulaşabilirsiniz.</div>
   	<div><br />
   		</div>
-  	<div>Firma Ünvanı<span class="Apple-tab-span"></span>:&nbsp; DİLAN GİYİM UĞUR MÜSLİM</div>
-  	<div>Adres<span class="Apple-tab-span"></span>:&nbsp; TOMTOM MAHALLESİ İSTİKLAL CADDESİ BEYOĞLU İŞ MERKEZİ NO : 187 / 58 bEYOĞLU / İSTANBUL</div>
-  	<div>Eposta<span class="Apple-tab-span"></span>:&nbsp; ugur.muslim@gmail.com</div>
-  	<div>Tel : +90 532 640 56 18</div>
-  	<div>Fax : +90 212 245 48 52</div>
+  	<div>Firma Ünvanı<span class="Apple-tab-span"></span>:&nbsp; ŞEN DERİ MAMÜLLERİ İMALAT İTHALAT İHRACAT SANAYİ TİCARET LTD. ŞİRKETİ</div>
+  	<div>Adres<span class="Apple-tab-span"></span>:&nbsp; ASMALIMESCİT MAHALLESİ İSTİKLAL CADDESİ HAZZOPULO PASAJI  NO:116/1C   BEYOĞLU / İSTANBUL</div>
+  	<div>Eposta<span class="Apple-tab-span"></span>:&nbsp;  sendericanta@hotmail.com</div>
+  	<div>Tel : +90 212 244 00 22</div>
   	<div><br />
   		</div>
   	<div><br />
