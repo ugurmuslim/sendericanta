@@ -34,7 +34,9 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
 /* TL Simgesi */
-
+.slider_logos.second_row {
+  margin-top: 10px;
+}
 .category-name {
   display:none;
 }
@@ -3413,5 +3415,14 @@ ul.with-bullets ,li.with-bullets {
 
         .brand_logo_block2 {
           text-align: center;
+        }
+
+        .slider_logos {
+          height: 50%;
+          width: auto;
+        }
+
+        .slider_logos.second_row {
+          margin-top: 5px;
         }
       }
