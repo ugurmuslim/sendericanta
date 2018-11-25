@@ -401,7 +401,7 @@
 							<!-- Block2 -->
 							<div class="block2">
 								<div class="block2-pic hov-img0">
-									<img src="{{asset('images/products/' . $related_product->images()->mainImage()->name)}}" style="width:255px; height:315px;"alt="IMG-PRODUCT">
+									<img src="{{asset('images/products/' . $related_product->images()->mainImage()->first()->name)}}" style="width:255px; height:315px;"alt="IMG-PRODUCT">
 
 									<a href="{{route('product.shop-detail',$product->slug)}}" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04">
 										{{__('views.shop.products_quickview')}}
