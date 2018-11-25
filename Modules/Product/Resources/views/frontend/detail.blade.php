@@ -396,7 +396,7 @@
 		<!-- Slide2 -->
 		<div class="row isotope-grid">
 					@foreach($relatedproducts as $related_product)
-					@if($product->images()->mainImage())
+					@if($product->images()->mainImage()->first())
 						<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item {{$product->category->name}}">
 							<!-- Block2 -->
 							<div class="block2">
