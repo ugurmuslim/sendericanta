@@ -42,7 +42,7 @@ class ProductController extends Controller
 
     $product = Product::where('slug',$slug)->first();
     $product_category = $product->category;
-    $related_products = $product_category->products()->where('deleted',false)->whereBetween('id',[1,20])->get();
+    $related_products = $product_category->products()->where('deleted',false)->whereBetween('id',[20,26])->get();
     return view('product::frontend.detail')->withProduct($product)
     ->withRelatedproducts($related_products);
   }
