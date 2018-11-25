@@ -31,13 +31,10 @@
 
     <div class="wrap-menu-desktop how-shadow1">
       <nav class="limiter-menu-desktop container">
-
         <!-- Logo desktop -->
         <a href="{{route('shop.index')}}" class="logo">
-
           <img src="{{asset('modules/shop/images/logos/sen_deri_logo.jpeg')}}" class="rounded-circle" alt="sen-deri-logo">
         </a>
-
         <!-- Menu desktop -->
         <div class="menu-desktop">
           <ul class="main-menu">
@@ -53,7 +50,6 @@
               @endforeach
               </ul>
             </li>
-
             <li class="">
               <a href="#">Erkek</a>
               <ul class="sub-menu">
@@ -126,6 +122,7 @@
         </a>--}}
       </div>
     </nav>
+  </div>
   </div>
 </div>
 

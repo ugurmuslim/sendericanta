@@ -101,7 +101,7 @@
   	<div>Firmamız, işbu "Gizlilik Politikası" hükümlerini dilediği zaman sitede yayınlamak veya kullanıcılara elektronik posta göndermek veya sitesinde yayınlamak suretiyle değiştirebilir. Gizlilik Politikası hükümleri değiştiği takdirde, yayınlandığı tarihte yürürlük kazanır.</div>
   	<div><br />
   		</div>
-  	<div>Gizlilik politikamız ile ilgili her türlü soru ve önerileriniz için ugur.muslim@gmail.com adresine email gönderebilirsiniz. Firmamız’a ait aşağıdaki iletişim bilgilerinden ulaşabilirsiniz.</div>
+  	<div>Gizlilik politikamız ile ilgili her türlü soru ve önerileriniz için sendericanta@hotmail.com adresine email gönderebilirsiniz. Firmamız’a ait aşağıdaki iletişim bilgilerinden ulaşabilirsiniz.</div>
   	<div><br />
   		</div>
   	<div>Firma Ünvanı<span class="Apple-tab-span"></span>:&nbsp; ŞEN DERİ MAMÜLLERİ İMALAT İTHALAT İHRACAT SANAYİ TİCARET LTD. ŞİRKETİ</div>

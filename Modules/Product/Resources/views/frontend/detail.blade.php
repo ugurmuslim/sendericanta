@@ -56,7 +56,7 @@
 											<div class="wrap-pic-w pos-relative">
 												<img src="{{asset('images/products/' . $image->name)}}" class="product-detail-photos" alt="IMG-PRODUCT">
 
-												<a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="images/product-detail-02.jpg">
+												<a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04" href="{{asset('images/products/' . $image->name)}}">
 													<i class="fa fa-expand"></i>
 												</a>
 											</div>
@@ -403,7 +403,7 @@
 								<div class="block2-pic hov-img0">
 									<img src="{{asset('images/products/' . $related_product->images()->mainImage()->name)}}" style="width:255px; height:315px;"alt="IMG-PRODUCT">
 
-									<a href="{{route('product.shop-detail',$product->slug)}}" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+									<a href="{{route('product.shop-detail',$product->slug)}}" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04">
 										{{__('views.shop.products_quickview')}}
 									</a>
 								</div>

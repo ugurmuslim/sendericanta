@@ -39,7 +39,7 @@
             <div><br />
             </div>
             <div>3) Sipariş Bedeli İadesi&nbsp;</div>
-            <div>Siparişlerinizin olası sebeplerle iptali durumunda; Dilan Giyim Uğur Müslim Şirketi üç iş günü içerisinde ürün bedelini hesabınıza ve/veya kredi kartınıza iade eder. Ancak, banka hesap bilgilerinizi ve/veya kredi kartı bilgilerinizi doğru ve eksiksiz olarak şirketimiz finans yetkililerine bildirmeniz gerekmektedir.&nbsp;</div>
+            <div>Siparişlerinizin olası sebeplerle iptali durumunda; ŞEN DERİ MAMÜLLERİ İMALAT İTHALAT İHRACAT SANAYİ TİCARET LTD. ŞİRKETİ üç iş günü içerisinde ürün bedelini hesabınıza ve/veya kredi kartınıza iade eder. Ancak, banka hesap bilgilerinizi ve/veya kredi kartı bilgilerinizi doğru ve eksiksiz olarak şirketimiz finans yetkililerine bildirmeniz gerekmektedir.&nbsp;</div>
             <div><br />
             </div>
             <div>4) Teslimat&nbsp;</div>
@@ -58,7 +58,7 @@
             <div>&nbsp;Lütfen dikkat ediniz!</div>
             <div>Sevkiyat sırasında zarar gördüğünü düşündüğünüz paketleri, teslim aldığınız firma yetkilisi önünde açıp kontrol ediniz. Eğer üründe herhangi bir zarar olduğunu düşünüyorsanız kargo firmasına tutanak tutturularak ürünü teslim almayınız.&nbsp;</div>
             <div>Ürün teslim alındıktan sonra kargo firmasının görevini tam olarak yerine getirdiği kabul edilmektedir.&nbsp;</div>
-            <div>Ürün hasarlı ise: Hazırlamış olduğunuz tutanağı en kısa zamanda 0212 245 48 52 numaralı fax’a gönderin ve durumu ugur.muslim@gmail.com mail adresine bildiriniz.&nbsp;</div>
+            <div>Ürün hasarlı ise: Hazırlamış olduğunuz tutanağı en kısa zamanda 0212 244 00 22 numaralı fax’a gönderin ve durumu sendericanta@hotmail.com mail adresine bildiriniz.&nbsp;</div>
             <div>Bu işlemleri gerçekleştirdiğiniz takdirde paketinizle ilgili çalışmalara başlayarak, en kısa zamanda teslimatın tekrarlanmasını sağlayacağız.</div>
             <div>Bu e-posta içinde ürünü neden iade etmek istediğinizi kısaca açıklarsanız ürün ile ilgili çalışmalarımızda bize yardımcı olmuş olursunuz.</div>
             <div>&nbsp;</div>

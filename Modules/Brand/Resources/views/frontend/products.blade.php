@@ -18,6 +18,19 @@
 					{{$brand->name}}
 				</h3>
 			</div>
+			<div class="row text-center">
+				@if($brand->image()->first())
+					<div class="col-md-12 col-md-offset-2 ">
+						<!-- Block2 -->
+							{{-- Eğer hover yapılınca fotografın yakınlaşmasını istersek hov-img0--}}
+							<div class="block2-pic">
+								<a href="{{route('brands.products',['brand_slug'=>$brand->slug,'category_slug'=>null])}}">
+									<img src="{{asset('images/brands/200-230/' . $brand->image->name)}}" class="mx-auto d-block" style="width:70px; height:77px;" alt="{{$brand->slug}}">
+								</a>
+								</div>
+							</div>
+				@endif
+			</div>
 			<div class="container">
 				<div class="row isotope-grid mt-5">
 					@foreach($products as $product)

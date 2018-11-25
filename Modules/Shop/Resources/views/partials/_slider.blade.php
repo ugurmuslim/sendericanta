@@ -41,7 +41,7 @@
             </div>
 --}}
             <div class="layer-slick1 animated visible-false mt-4" data-appear="zoomIn" data-delay="1600">
-              <a href="#butix_products" class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04">
+              <a href="{{route('brands.products',["brand_slug" => 'sen-deri-canta',"category_slug" => "none"])}}" class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04">
                 DERİ ÜRÜNLERİMİZE GÖZ ATIN
               </a>
             </div>
