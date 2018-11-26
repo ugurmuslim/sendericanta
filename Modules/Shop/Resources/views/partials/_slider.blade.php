@@ -7,6 +7,15 @@
             <div class="layer-slick1 animated visible-false" data-appear="fadeInDown" data-delay="0">
               <span class="ltext-101 cl2 respon2">
                 <div class="row">
+                  <div class="layer-slick1 animated visible-false" data-appear="fadeInUp" data-delay="800">
+
+                      <a href="{{route('brands.products',["brand_slug" => 'sen-deri-canta',"category_slug" => "none"])}}">
+                      <img src="{{asset('modules/shop/images/logos/sen_deri_logo1.jpeg')}}" class="slider_logos" alt="">
+                    </a>
+                        <h2 class="ltext-201 cl5 p-t-19 p-b-43 respon1">
+                          ŞEN DERİ ÇANTALARI
+                        </h2>
+                      </div>
                   <div class="col-md-6">
                     <a href="{{route('brands.products',["brand_slug" => 'north-face',"category_slug" => "none"])}}">
                   <img src="{{asset('modules/shop/images/logos/northface2.png')}}" class="slider_logos" alt="">
@@ -32,14 +41,11 @@
 
                 </div>
               </span>
+
             </div>
 
-        {{--    <div class="layer-slick1 animated visible-false" data-appear="fadeInUp" data-delay="800">
-              <h2 class="ltext-201 cl2 p-t-19 p-b-43 respon1">
-                EN YENİ MODELLER
-              </h2>
-            </div>
---}}
+
+
             <div class="layer-slick1 animated visible-false mt-4" data-appear="zoomIn" data-delay="1600">
               <a href="{{route('brands.products',["brand_slug" => 'sen-deri-canta',"category_slug" => "none"])}}" class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04">
                 DERİ ÜRÜNLERİMİZE GÖZ ATIN
