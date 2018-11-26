@@ -3514,6 +3514,6 @@ ul.with-bullets ,li.with-bullets {
         }
 
         .slider-logo-index {
-          margin: 0 auto;
+          margin: 0 auto !important;
         }
       }
