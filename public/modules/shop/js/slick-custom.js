@@ -91,8 +91,8 @@
         [ Slick2 ]*/
         $('.wrap-slick2').each(function(){
             $(this).find('.slick2').slick({
-              slidesToShow: 8,
-              slidesToScroll: 8,
+              slidesToShow: 4,
+              slidesToScroll: 4,
               infinite: false,
               autoplay: false,
               autoplaySpeed: 6000,
@@ -104,8 +104,8 @@
                 {
                   breakpoint: 1200,
                   settings: {
-                    slidesToShow: 8,
-                    slidesToScroll: 8
+                    slidesToShow: 4,
+                    slidesToScroll: 4
                   }
                 },
                 {
@@ -118,15 +118,15 @@
                 {
                   breakpoint: 768,
                   settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3
+                    slidesToShow: 2,
+                    slidesToScroll: 2
                   }
                 },
                 {
                   breakpoint: 576,
                   settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3
+                    slidesToShow: 1,
+                    slidesToScroll: 1
                   }
                 }
               ]

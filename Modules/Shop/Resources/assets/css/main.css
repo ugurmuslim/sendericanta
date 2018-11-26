@@ -1445,8 +1445,9 @@ ul.with-bullets ,li.with-bullets {
 
       .wrap-slick2 {
         position: relative;
-        margin-right: -15px;
-        margin-left: -15px;
+        width:50%;
+        display:block;
+        margin:0 auto;
       }
 
       /* ------------------------------------ */
