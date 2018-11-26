@@ -3515,5 +3515,6 @@ ul.with-bullets ,li.with-bullets {
 
         .slider-logo-index {
           margin: 0 auto !important;
+          margin-bottom: 20px;
         }
       }
