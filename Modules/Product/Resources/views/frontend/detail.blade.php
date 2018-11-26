@@ -120,6 +120,8 @@
 									</div>
 								</div>
 								--}}
+								<input  name = "size" value="{{98 . '-' . "Beden Yok"}}" hidden>
+
 								<div class="flex-w flex-r-m p-b-10">
 									<div class="size-203 flex-c-m respon6">
 										{{__('views.shop.shop_color')}}
