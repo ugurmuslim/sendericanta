@@ -34,8 +34,9 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
 /* TL Simgesi */
+
 .slider_logos.second_row {
-  margin-top: 10px;
+  margin-top: 10px !important;
 }
 .category-name {
   display:none;
@@ -424,6 +425,7 @@ ul.with-bullets ,li.with-bullets {
         position: relative;
         padding: 20px 10px 20px 0px;
         margin: 0px 4px 0px 14px;
+        text-transform : uppercase;
       }
 
       .main-menu > li > a {
@@ -3418,11 +3420,11 @@ ul.with-bullets ,li.with-bullets {
         }
 
         .slider_logos {
-          height: 50%;
-          width: auto;
+          height: 50% !important;
+          width: auto !important;
         }
 
         .slider_logos.second_row {
-          margin-top: 5px;
+          margin-top: 5px !important;
         }
       }

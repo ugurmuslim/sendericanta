@@ -10,7 +10,9 @@
 	box-sizing: border-box;
 }
 
-
+.slider_logos.second_row {
+  margin-top: 10px !important;
+}
 
 body, html {
 	font-family: Arial, sans-serif;
@@ -3716,4 +3718,13 @@ iframe {border: none;}
 /*---------------------------------------------*/
 .pointer-none {
 	pointer-events: none;
+}
+
+.slider_logos {
+	height: 50% !important;
+	width: auto !important;
+}
+
+.slider_logos.second_row {
+	margin-top: 5px !important;
 }

@@ -425,6 +425,7 @@ ul.with-bullets ,li.with-bullets {
         position: relative;
         padding: 20px 10px 20px 0px;
         margin: 0px 4px 0px 14px;
+        text-transform : uppercase;
       }
 
       .main-menu > li > a {
