@@ -125,8 +125,10 @@
 		    <div class="slick2">
 					@foreach($brands as $brand)
 						@if($brand->image()->first())
+							<a href="{{route('brands.products',["brand_slug" => $brand->slug,"category_slug" => "none"])}}">
 					<div class="item-slick2 ml-5 "><img src="{{asset('images/brands/200-230/' . $brand->image->name)}}" style="width:70px; height:77px;" class="mb-4 slider-logo-index" alt="">
 		      </div>
+				</a>
 				@endif
 			@endforeach
 		    </div>
