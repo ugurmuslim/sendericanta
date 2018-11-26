@@ -3512,4 +3512,8 @@ ul.with-bullets ,li.with-bullets {
         .slider_logos.second_row {
           margin-top: 5px !important;
         }
+
+        .slider-logo-index {
+          margin: 0 auto;
+        }
       }
