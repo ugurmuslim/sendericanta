@@ -92,7 +92,7 @@
 							@if(!$product->category->no_price)
 
 							<div class="p-t-33">
-							{	<div class="flex-w flex-r-m p-b-10">
+							{{--<div class="flex-w flex-r-m p-b-10">
 									<div class="size-203 flex-c-m respon6">
 										{{__('views.shop.shop_size')}}
 									</div>
@@ -119,7 +119,7 @@
 										</div>
 									</div>
 								</div>
-
+								--}}
 								<div class="flex-w flex-r-m p-b-10">
 									<div class="size-203 flex-c-m respon6">
 										{{__('views.shop.shop_color')}}
