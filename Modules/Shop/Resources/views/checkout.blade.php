@@ -113,11 +113,7 @@
 
 						<div class="size-209 p-r-18 p-r-0-sm w-full-ssm">
 							<p class="mtext-110 cl6 p-t-2">
-								@if(Cart::total() > 100)
-									{{__('views.shop.no_shipping_price')}}
-								@else
-								Kapıda Ödeme - <span class="simge-tl">&#8378;</span>8 dahil değildir.
-							@endif
+								Kargo Bizden.
 							</p>
 							{{--
 							<div class="p-t-15">

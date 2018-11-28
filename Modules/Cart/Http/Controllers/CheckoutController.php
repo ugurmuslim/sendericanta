@@ -48,8 +48,8 @@ class CheckoutController extends Controller
     ####################### DÜZENLEMESİ ZORUNLU ALANLAR #######################
     #
     ## API Entegrasyon Bilgileri - Mağaza paneline giriş yaparak BİLGİ sayfasından alabilirsiniz.
-    $merchant_key 	= 'ng6rd4NDRtEnPiWj';
-    $merchant_salt	= 'cRJ3xzTbCG85fWo9';
+    $merchant_key 	= '5HaLSisAgf3wXEFx';
+    $merchant_salt	= 'ADnBFEx4Ka8nB9RP';
     ###########################################################################
 
     ####### Bu kısımda herhangi bir değişiklik yapmanıza gerek yoktur. #######
@@ -85,6 +85,7 @@ class CheckoutController extends Controller
       $order->productsale->save();
     }
     Mail::to(User::where('id',$orders[0]->productsale->customer_id)->first())->send(new SendSaleSuccess($orders[0]->sale_package_id,$orders[0]->adress_id));
+    Mail::to(User::where('email','sendericanta@hotmail.com')->first())->send(new AdminSaleSuccess($orders[0]->sale_package_id,$orders[0]->adress_id));
     Mail::to(User::where('email','ugur.muslim@gmail.com')->first())->send(new AdminSaleSuccess($orders[0]->sale_package_id,$orders[0]->adress_id));
 
 
@@ -114,7 +115,7 @@ public function create(Request $request)
     $request->validate(array(
   'payment_checkbox' => 'required',
   ));
-  $user = User::find(Auth::user()->id);
+/* $user = User::find(Auth::user()->id);
   $shopPay = new Payment();
   if($request->submit == "Kapıda Ödeme") {
     $shopPay->paymentDoor($request);
@@ -125,10 +126,10 @@ public function create(Request $request)
     $payment_form = '<div id="iyzipay-checkout-form" class="popup"></div>';
     return view('cart::checkout.payment')->withPaymentform($payment_form);
   }
-
-  $merchant_id 	= '121812';
-  $merchant_key 	= 'ng6rd4NDRtEnPiWj';
-  $merchant_salt	= 'cRJ3xzTbCG85fWo9';
+*/
+  $merchant_id 	= '125024';
+  $merchant_key 	= '5HaLSisAgf3wXEFx';
+  $merchant_salt	= 'ADnBFEx4Ka8nB9RP';
   #
   $online_order = new Onlineorder;
   $basketId = 2;
@@ -205,7 +206,7 @@ public function create(Request $request)
 
   ## !!! Eğer bu örnek kodu sunucuda değil local makinanızda çalıştırıyorsanız
   ## buraya dış ip adresinizi (https://www.whatismyip.com/) yazmalısınız. Aksi halde geçersiz paytr_token hatası alırsınız.
-  $user_ip = $ip;
+  $user_ip = "95.8.74.210";
   ##
   ## İşlem zaman aşımı süresi - dakika cinsinden
   $timeout_limit = "30";

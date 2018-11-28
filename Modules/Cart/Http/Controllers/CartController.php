@@ -46,7 +46,7 @@ class CartController extends Controller
     ->where('size_id',$size_id)
     ->where('color_id',$color_id)->first()->stock;
     if($a < $request->quantity) {
-      $error = "Bu renkte sadece $a adet vardır.";
+      $error = "$color_name renkte sadece $a adet vardır.";
       return redirect()->back()->withError($error)
       ->withInput();
     }
