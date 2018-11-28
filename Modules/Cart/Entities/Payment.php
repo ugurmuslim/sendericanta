@@ -142,7 +142,7 @@ class Payment extends Model
   }
 
   //  Paytr için bu değişkenleri aşağıdaki fonksiyona ekle :: $statu,$sale_package
-  public function saveProductSale($row, $sale_package) {
+  public function saveProductSale($row,$sale_package) {
     //Pay_tr de aşağısı commentleniyor
 
     //Commentlenecek yer bitti.

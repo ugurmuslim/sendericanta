@@ -173,7 +173,7 @@ public function create(Request $request)
     $last_package = $product_sale->orderBy('id','DESC')->first();
     $sale_package = $product_sale->createSalePackageNumber($last_package);
     $payment = new Payment;
-    $product_sale = $payment->saveProductSale($row,false,$sale_package);
+    $product_sale = $payment->saveProductSale($row,$sale_package);
     $online_order = new OnlineOrder;
     $adress_id = $request->adress_id;
     $online_order->createOrder($merchant_oid ,$adress_id,$product_sale);
@@ -206,7 +206,7 @@ public function create(Request $request)
 
   ## !!! Eğer bu örnek kodu sunucuda değil local makinanızda çalıştırıyorsanız
   ## buraya dış ip adresinizi (https://www.whatismyip.com/) yazmalısınız. Aksi halde geçersiz paytr_token hatası alırsınız.
-  $user_ip = $ip;
+  $user_ip = "95.8.74.210";
   ##
   ## İşlem zaman aşımı süresi - dakika cinsinden
   $timeout_limit = "30";
