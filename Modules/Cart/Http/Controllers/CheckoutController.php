@@ -145,7 +145,6 @@ public function create(Request $request)
   #
   ## Sipariş numarası: Her işlemde benzersiz olmalıdır!! Bu bilgi bildirim sayfanıza yapılacak bildirimde geri gönderilir.
   $merchant_oid = $basketId;
-  dd($merchant_oid);
   #
   ## Müşterinizin sitenizde kayıtlı veya form aracılığıyla aldığınız ad ve soyad bilgisi
   $user_name = $request->name . $request->last_name;
