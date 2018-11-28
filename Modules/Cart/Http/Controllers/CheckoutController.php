@@ -144,7 +144,7 @@ public function create(Request $request)
   $payment_amount	= Cart::total() * 100; //9.99 için 9.99 * 100 = 999 gönderilmelidir.
   #
   ## Sipariş numarası: Her işlemde benzersiz olmalıdır!! Bu bilgi bildirim sayfanıza yapılacak bildirimde geri gönderilir.
-  $merchant_oid = $basketId;
+  $merchant_oid =$basketId;
   #
   ## Müşterinizin sitenizde kayıtlı veya form aracılığıyla aldığınız ad ve soyad bilgisi
   $user_name = $request->name . $request->last_name;
@@ -168,7 +168,7 @@ public function create(Request $request)
   ## Müşterinin sepet/sipariş içeriği
   $basket = [];
   foreach(Cart::content() as $row) {
-    $basket[] = ['Ürün Ad' => $row->name, 'Birim Fiyat' => $row->price, 'Adet'=>$row->qty];
+    $basket[] = [$row->name,$row->price,$row->qty];
     $product_sale = new Productsale;
     $last_package = $product_sale->orderBy('id','DESC')->first();
     $sale_package = $product_sale->createSalePackageNumber($last_package);
