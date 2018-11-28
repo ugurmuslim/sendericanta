@@ -206,7 +206,7 @@ public function create(Request $request)
 
   ## !!! Eğer bu örnek kodu sunucuda değil local makinanızda çalıştırıyorsanız
   ## buraya dış ip adresinizi (https://www.whatismyip.com/) yazmalısınız. Aksi halde geçersiz paytr_token hatası alırsınız.
-  $user_ip = "95.8.74.210";
+  $user_ip = $ip;
   ##
   ## İşlem zaman aşımı süresi - dakika cinsinden
   $timeout_limit = "30";
