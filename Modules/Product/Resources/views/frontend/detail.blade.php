@@ -166,6 +166,9 @@
 											<i class="fs-16 zmdi zmdi-plus"></i>
 										</div>
 									</div>
+									<div class="alert {{$product->colors()->sum('stock') < 3 ? "alert-danger" : "alert-success" }}" role="alert">
+								     Toplam {{$product->colors()->sum('stock')}} stoklarımızda mevcuttur.
+								  </div>
 
 									<button class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04">
 										{{__('views.shop.shop_add_to_cart')}}
