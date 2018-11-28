@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
 use Cart;
+use DB;
 class CartController extends Controller
 {
   /**
@@ -33,13 +34,22 @@ class CartController extends Controller
   */
   public function store(Request $request)
   {
+
+
     $size = explode('-',$request->size);
     $size_id = $size[0];
     $size_name = $size[1];
-
     $color = explode('-',$request->color);
     $color_id = $color[0];
     $color_name = $color[1];
+    $a = DB::table('product_attributes')->where('product_id',$request->product_id)
+    ->where('size_id',$size_id)
+    ->where('color_id',$color_id)->first()->stock;
+    if($a < $request->quantity) {
+      $error = "Bu renkte sadece $a adet vardır.";
+      return redirect()->back()->withError($error)
+      ->withInput();
+    }
     Cart::add($request->product_id,$request->product_name,$request->quantity,$request->product_price,
     ['size'=>['size_id'=>$size_id,'size_name'=>$size_name],
     'color'=>['color_id'=>$color_id,'color_name'=>$color_name]])

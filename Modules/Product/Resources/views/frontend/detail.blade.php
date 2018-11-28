@@ -15,6 +15,8 @@
 
 		<!-- breadcrumb -->
 		<div class="container">
+			@include('partials._messages')
+
 			<div class="bread-crumb flex-w p-l-25 p-r-15 p-t-30 p-lr-0-lg">
 				<a href="{{route('shop.index')}}" class="stext-109 cl8 hov-cl1 trans-04">
 					{{__('views.shop.menu_home')}}
@@ -120,7 +122,7 @@
 									</div>
 								</div>
 								--}}
-								<input  name = "size" value="{{98 . '-' . "Beden Yok"}}" hidden>
+								<input  name = "size" value="{{2 . '-' . "Beden Yok"}}" hidden>
 
 								<div class="flex-w flex-r-m p-b-10">
 									<div class="size-203 flex-c-m respon6">
@@ -427,7 +429,8 @@
 												<img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png" alt="ICON">
 												<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png" alt="ICON">
 											</a>
-										</div>--}}
+										</div>
+										--}}
 									</div>
 									</div>
 								</div>
