@@ -163,6 +163,7 @@
 			{{--	@foreach($men_products as $product)--}}
 				@foreach($products as $product)
 					@if($product->images()->mainImage()->first())
+						@if($product->colors()->sum('stock') > 0)
 
 						<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item {{$product->category->slug}}">
 							<!-- Block2 -->
@@ -188,6 +189,7 @@
 								</div>
 							</div>
 						</div>
+					@endif
 					@endif
 				@endforeach
 			</div>
