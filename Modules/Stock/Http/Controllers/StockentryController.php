@@ -53,7 +53,6 @@ class StockentryController extends Controller
   {
     $slug = str_slug($request->name, "-");
     $product = new Product;
-    dd($product->productNameValidation($request->name));
 
     if($product->productNameValidation($request->name)) {
       $error = "Bu isimde bir ürün zaten yaratılmış.";
