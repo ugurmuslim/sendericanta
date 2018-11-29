@@ -43,7 +43,7 @@ class Product extends Model
   }
   public function productNameValidation($slug)
   {
-    return $this->ProductSlug($slug)->first();
+    return $this->ProductSlug($slug)->where('deleted',1)->first();
   }
 
   public function scopeProductNumber($query,$category){
