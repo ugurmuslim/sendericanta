@@ -76,9 +76,9 @@ class StockentryController extends Controller
     $product->details = $request->details;
     $product->size_track = $request->size_track;
     $product->slug = $slug = str_slug($request->name, "-");
-    dd('ds');
     if($product->productExNameValidation($request->name)) {
       $product->slug = str_slug($request->name, "-") . "-" . mt_rand(1, 100);
+      dd($product->slug);
     }
     $stock_attributes = $request->stock_attributes;
     $price_all = $request->price_size;
