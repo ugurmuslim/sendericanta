@@ -54,7 +54,7 @@ class StockentryController extends Controller
     $slug = str_slug($request->name, "-");
     $product = new Product;
 
-    if($product->productNameValidation($request->name)) {
+    if($product->productNameValidation($slug)) {
       $error = "Bu isimde bir ürün zaten yaratılmış.";
       return redirect()->back()->withError($error)
       ->withInput();
@@ -76,7 +76,7 @@ class StockentryController extends Controller
     $product->details = $request->details;
     $product->size_track = $request->size_track;
     $product->slug = $slug = str_slug($request->name, "-");
-    if($product->productExNameValidation($request->name)) {
+    if($product->productExNameValidation($slug)) {
       $product->slug = str_slug($request->name, "-") . "-" . mt_rand(1, 100);
       dd($product->slug);
     }
