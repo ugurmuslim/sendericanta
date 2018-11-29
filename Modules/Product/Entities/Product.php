@@ -43,8 +43,14 @@ class Product extends Model
   }
   public function productNameValidation($slug)
   {
+    return $this->ProductSlug($slug)->where('deleted',0)->first();
+  }
+
+  public function productExNameValidation($slug)
+  {
     return $this->ProductSlug($slug)->where('deleted',1)->first();
   }
+
 
   public function scopeProductNumber($query,$category){
     return $query->whereBetween(
