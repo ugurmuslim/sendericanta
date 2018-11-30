@@ -45,7 +45,7 @@
 										</div>
 									</td>
 									<td class="column-2">{{$product->name}}<br>	<span>{{$row->options->color['color_name']}}</span>
-										<span>{{$row->options->size['size_name']}}</span>
+									 {{--}}	<span>{{$row->options->size['size_name']}}</span>--}}
 									</td>
 									<td class="column-3"><span class="simge-tl">&#8378;</span>{{$product->price}}</td>
 									<td class="column-4">

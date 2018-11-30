@@ -35,10 +35,10 @@
             {{$row->qty}} x {{$row->price}} <span class="simge-tl">&#8378;</span>
           </span>
 
-          <span class="header-cart-item-info">
+    {{--      <span class="header-cart-item-info">
             {{$row->options->size['size_name']}}
           </span>
-
+--}}
           <span class="header-cart-item-info">
             {{$row->options->color['color_name']}}
           </span>

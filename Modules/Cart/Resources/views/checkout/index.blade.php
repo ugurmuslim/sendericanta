@@ -94,7 +94,7 @@
 								<ul>
 									<li>İsim : {{$product->name}}</li>
 									<li>Fiyat : <span class="simge-tl">&#8378;</span> {{$product->price}} </li>
-									<li>Beden : {{$row->options->size['size_name']}} </li>
+								{{--	<li>Beden : {{$row->options->size['size_name']}} </li>--}}
 									<li>Renk : {{$row->options->color['color_name']}} </li>
 									<li>Adet : {{$row->qty}} </li>
 								</ul>
