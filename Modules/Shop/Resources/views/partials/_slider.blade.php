@@ -5,11 +5,13 @@
         <div class="container h-full">
           <div class="flex-col-l-m h-full p-t-100 p-b-30 respon5">
             <div class="row">
+              <div class="col-md-2">
 
             <div class="layer-slick1 animated visible-false" data-appear="fadeInUp" data-delay="800">
               <a href="{{route('brands.products',["brand_slug" => 'sen-deri-canta',"category_slug" => "none"])}}">
                 <img src="{{asset('modules/shop/images/logos/sen_deri_logo1.jpeg')}}" class="slider_logos second_row" alt="">
                 </a>
+              </div>
               </div>
               </div>
             <div class="layer-slick1 animated visible-false" data-appear="fadeInDown" data-delay="0">
@@ -63,11 +65,13 @@
         <div class="container h-full">
           <div class="flex-col-l-m h-full p-t-100 p-b-30 respon5">
             <div class="row">
+              <div class="col-md-6">
 
             <div class="layer-slick1 animated visible-false" data-appear="fadeInUp" data-delay="800">
               <a href="{{route('brands.products',["brand_slug" => 'sen-deri-canta',"category_slug" => "none"])}}">
-                <img src="{{asset('modules/shop/images/logos/sen_deri_logo1.jpeg')}}" class="slider_logos second_row" alt="">
+                <img src="{{asset('modules/shop/images/logos/sen_deri_logo1.jpeg')}}" class="slider_logos" alt="">
                 </a>
+              </div>
               </div>
               </div>
             <div class="layer-slick1 animated visible-false" data-appear="rollIn" data-delay="0">

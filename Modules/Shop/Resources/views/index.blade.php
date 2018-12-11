@@ -7,17 +7,14 @@
 		text-align: center;
 	}
 	@media(max-width: 575px) {
-
-		.product_block2
-		{
+		.product_block2 {
 			width:auto;
 			height: auto;
 		}
 		@media (max-width: 767px) {
-
 			.block2-txt-child1 {
 				margin: auto;
-	  	width: 50%;
+	  		width: 50%;
 			}
 
 			</style>
@@ -164,7 +161,7 @@
 					@if($product->images()->mainImage()->first())
 						@if($product->colors()->sum('stock') > 0)
 
-						<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item {{$product->category->slug}}">
+						<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item mt-5 {{$product->category->slug}}">
 							<!-- Block2 -->
 
 							<div class="block2 product_block2 mt-5">
