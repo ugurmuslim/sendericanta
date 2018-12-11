@@ -94,12 +94,12 @@
               slidesToShow: 4,
               slidesToScroll: 4,
               infinite: false,
-              autoplay: true,
+              autoplay: false,
               autoplaySpeed: 6000,
-              arrows: false,
+              arrows: true,
               appendArrows: $(this),
-            //  prevArrow:'<button class="arrow-slick2 prev-slick2"><i class="fa fa-angle-left" aria-hidden="true"></i></button>',
-            //  nextArrow:'<button class="arrow-slick2 next-slick2 ml-4"><i class="fa fa-angle-right" aria-hidden="true"></i></button>',
+              prevArrow:'<button class="arrow-slick2 prev-slick2"><i class="fa fa-angle-left" aria-hidden="true"></i></button>',
+              nextArrow:'<button class="arrow-slick2 next-slick2"><i class="fa fa-angle-right" aria-hidden="true"></i></button>',
               responsive: [
                 {
                   breakpoint: 1200,
@@ -125,7 +125,7 @@
                 {
                   breakpoint: 576,
                   settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 1,
                     slidesToScroll: 1
                   }
                 }

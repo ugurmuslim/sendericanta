@@ -391,8 +391,9 @@
 </section>
 
 
+{{--
 <!-- Related Products -->
-<section class="sec-relate-product bg0 p-t-45 p-b-105">
+<section class="sec-related-product bg0 p-t-45 p-b-105">
 	<div class="container">
 		<div class="p-b-45">
 			<h3 class="ltext-106 cl5 txt-center">
@@ -433,7 +434,7 @@
 												<img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png" alt="ICON">
 											</a>
 										</div>
-										--}}
+
 									</div>
 									</div>
 								</div>
@@ -442,7 +443,7 @@
 				</div>
 			</div>
 	</section>
-	<!-- Footer -->
+	<!-- Footer -->	--}}
 	@include('shop::partials._footer')
 	<!-- Back to top -->
 	<div class="btn-back-to-top" id="myBtn">

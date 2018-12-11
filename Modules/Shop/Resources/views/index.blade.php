@@ -16,9 +16,8 @@
 		@media (max-width: 767px) {
 
 			.block2-txt-child1 {
-				width: calc(100% - 30px);
-				position: relative;
-				left: 20% !important;
+				margin: auto;
+	  	width: 50%;
 			}
 
 			</style>
@@ -126,7 +125,7 @@
 					@foreach($brands as $brand)
 						@if($brand->image()->first())
 							<a href="{{route('brands.products',["brand_slug" => $brand->slug,"category_slug" => "none"])}}">
-					<div class="item-slick2 ml-5 "><img src="{{asset('images/brands/200-230/' . $brand->image->name)}}" style="width:70px; height:77px;" class="mb-4 slider-logo-index" alt="">
+					<div class="item-slick2  "><img src="{{asset('images/brands/200-230/' . $brand->image->name)}}" style="width:70px; height:77px;" class="mb-4 slider-logo-index" alt="">
 		      </div>
 				</a>
 				@endif
@@ -179,7 +178,6 @@
 								<div class="block2-txt flex-w flex-t p-t-14 ">
 									<div class="block2-txt-child1 flex-col-l ">
 										<a href="{{route('product.shop-detail',$product->slug)}}" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
-
 											{{$product->name}}
 										</a>
 										<span class="stext-105 cl3">

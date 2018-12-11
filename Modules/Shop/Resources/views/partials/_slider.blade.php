@@ -10,9 +10,6 @@
               <a href="{{route('brands.products',["brand_slug" => 'sen-deri-canta',"category_slug" => "none"])}}">
                 <img src="{{asset('modules/shop/images/logos/sen_deri_logo1.jpeg')}}" class="slider_logos second_row" alt="">
                 </a>
-                <h2 class="ltext-201 cl2 p-t-19 p-b-43 respon1">
-                  EN YENİ MODELLER
-                </h2>
               </div>
               </div>
             <div class="layer-slick1 animated visible-false" data-appear="fadeInDown" data-delay="0">
@@ -71,9 +68,6 @@
               <a href="{{route('brands.products',["brand_slug" => 'sen-deri-canta',"category_slug" => "none"])}}">
                 <img src="{{asset('modules/shop/images/logos/sen_deri_logo1.jpeg')}}" class="slider_logos second_row" alt="">
                 </a>
-                <h2 class="ltext-201 cl2 p-t-19 p-b-43 respon1">
-                  EN YENİ MODELLER
-                </h2>
               </div>
               </div>
             <div class="layer-slick1 animated visible-false" data-appear="rollIn" data-delay="0">

@@ -2220,8 +2220,8 @@ ul.with-bullets ,li.with-bullets {
 
       /*---------------------------------------------*/
       .block2-txt-child1 {
-        width: calc(100% - 30px);
-        position: relative;
+      /*  width: calc(100% - 30px);
+        position: relative;*/
       }
 
       .block2-txt-child2 {
@@ -3415,8 +3415,8 @@ ul.with-bullets ,li.with-bullets {
         }
 
         .block2-txt-child1 {
-          width: calc(100% - 30px);
-          position: relative;
+        /*  width: calc(100% - 30px);
+       position: relative;*/
           /* left: 12%; */
         }
 
@@ -3514,6 +3514,7 @@ ul.with-bullets ,li.with-bullets {
         }
 
         .slider-logo-index {
-          margin: 0 auto;
+          margin: 0 auto !important;
+          margin-bottom: 20px;
         }
       }
