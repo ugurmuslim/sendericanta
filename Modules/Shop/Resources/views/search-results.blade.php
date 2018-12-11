@@ -28,10 +28,10 @@
 			<div class="row isotope-grid">
 				@foreach($products as $product)
 					@if($product->images()->mainImage(1)->first())
-				<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item {{$product->category->name}}">
+				<div class="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item mt-5 {{$product->category->name}}">
 					<!-- Block2 -->
-					<div class="block2">
-						<div class="block2-pic hov-img0">
+					<div class="block2 product_block2">
+						<div class="block2-pic">
 							<img src="{{asset('images/products/' . $product->images()->mainImage(1)->name)}}" style="width:255px; height:315px;" alt="{{$product->slug}}">
 						</div>
 
@@ -41,7 +41,7 @@
 								{{$product->name}}
 								</a>
 								<span class="stext-105 cl3">
-								<span class="simge-tl">&#8378;</span> {{$product->price}}
+								<span class="simge-tl block2-txt-child1">&#8378;</span> {{$product->price}}
 								</span>
 							</div>
 						</div>
