@@ -89,12 +89,6 @@
                     <img src="{{asset('modules/shop/images/logos/fouvor2.png')}}" class="slider_logos second_row" alt="">
                   </a>
                 </div>
-                <div class="col-md-6">
-                  <a href="{{route('brands.products',["brand_slug" => 'hummel',"category_slug" => "none"])}}">
-                  <img src="{{asset('modules/shop/images/logos/Hummel2.png')}}" class="slider_logos second_row" alt="">
-                </a>
-                </div>
-
                 </div>
               </span>
             </div>
