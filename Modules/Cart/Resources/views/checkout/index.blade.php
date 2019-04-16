@@ -141,7 +141,7 @@
 
 									<div class="size-209 p-r-18 p-r-0-sm w-full-ssm">
 										<p class="stext-111 cl6 p-t-2">
-											75 <span class="simge-tl"> Üzerinde Kargo Bizden.
+											75 ₺ Üzerinde Kargo Bizden.
 										</div>
 									</div>
 
