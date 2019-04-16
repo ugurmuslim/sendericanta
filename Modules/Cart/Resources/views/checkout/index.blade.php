@@ -141,9 +141,7 @@
 
 									<div class="size-209 p-r-18 p-r-0-sm w-full-ssm">
 										<p class="stext-111 cl6 p-t-2">
-											Ürünlerimiz MNG kargo ile Gönderilmektedir
-											Kapıda Ödeme - <span class="simge-tl">&#8378;</span>8 dahil değildir.
-
+											75 <span class="simge-tl"> Üzerinde Kargo Bizden.
 										</div>
 									</div>
 

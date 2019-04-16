@@ -47,6 +47,7 @@
       <p>Ülke : {{$adress->country}} </p>
       <p>Şehir : {{$adress->city}} </p>
       <p>Adres : {{$adress->adress}} </p>
+      <p>TC Kimlik No: : {{$adress->id_number}} </p>
       <p>İyi Günler</p>
     </div>
   </body>
